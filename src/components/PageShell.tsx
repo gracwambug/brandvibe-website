@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useRouterState } from "@tanstack/react-router";
+import { useLocation } from "react-router-dom";
 import { SiteNav } from "./SiteNav";
 import { SiteFooter } from "./SiteFooter";
 
@@ -14,7 +14,7 @@ declare global {
 }
 
 export function PageShell({ html }: PageProps) {
-  const path = useRouterState({ select: (s) => s.location.pathname });
+  const location = useLocation();
 
   // Ensure brandvibe.js is loaded once
   useEffect(() => {
@@ -30,11 +30,10 @@ export function PageShell({ html }: PageProps) {
 
   // Re-init bindings whenever the route changes
   useEffect(() => {
-    const t = setTimeout(() => window.brandvibeInit?.(), 50);
-    // Handle in-page hash scroll
+    const t = window.setTimeout(() => window.brandvibeInit?.(), 50);
     const hash = window.location.hash.replace("#", "");
     if (hash) {
-      setTimeout(() => {
+      window.setTimeout(() => {
         const el = document.getElementById(hash);
         if (el) {
           const offset = el.getBoundingClientRect().top + window.scrollY - 90;
@@ -44,8 +43,8 @@ export function PageShell({ html }: PageProps) {
     } else {
       window.scrollTo({ top: 0 });
     }
-    return () => clearTimeout(t);
-  }, [path]);
+    return () => window.clearTimeout(t);
+  }, [location.pathname]);
 
   return (
     <>

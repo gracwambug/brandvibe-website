@@ -1,4 +1,4 @@
-import { Link, useRouterState } from "@tanstack/react-router";
+import { NavLink, useLocation } from "react-router-dom";
 
 const links = [
   { to: "/", label: "Home" },
@@ -10,8 +10,9 @@ const links = [
 ] as const;
 
 export function SiteNav() {
-  const path = useRouterState({ select: (s) => s.location.pathname });
-  const isAutoVibe = path === "/autovibe";
+  const location = useLocation();
+  const isAutoVibe = location.pathname === "/autovibe";
+
   return (
     <nav
       id="mainNav"
@@ -24,7 +25,7 @@ export function SiteNav() {
           : undefined
       }
     >
-      <Link
+      <NavLink
         to="/"
         className="nav-logo"
         style={{
@@ -56,24 +57,25 @@ export function SiteNav() {
         >
           Strategy · Systems · Growth
         </span>
-      </Link>
+      </NavLink>
       <ul className="nav-links">
         {links.map((l) => (
           <li key={l.to}>
-            <Link
+            <NavLink
               to={l.to}
-              activeOptions={{ exact: l.to === "/" }}
-              activeProps={{ className: "active" }}
+              className={({ isActive }) =>
+                isActive || (l.to === "/" && location.pathname === "/") ? "active" : undefined
+              }
               style={isAutoVibe ? { color: "rgba(255,255,255,0.6)" } : undefined}
             >
               {l.label}
-            </Link>
+            </NavLink>
           </li>
         ))}
         <li>
-          <Link to="/contact" className="nav-cta">
+          <NavLink to="/contact" className="nav-cta">
             Contact
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>
