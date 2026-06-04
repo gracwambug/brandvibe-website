@@ -1,0 +1,158 @@
+import { jsx } from "react/jsx-runtime";
+import { P as PageShell } from "./PageShell-DhiuMftR.js";
+import "react";
+import "@tanstack/react-router";
+const html = `  <div class="page-hero">\r
+    <div class="page-hero-inner">\r
+      <p class="breadcrumb">Home / <span>Contact</span></p>\r
+      <h1 class="page-title">Let's Start the <em>Conversation</em></h1>\r
+      <p class="page-sub">Whether you're looking to grow your brand, improve visibility, automate business processes, or explore new opportunities, we'd love to hear from you.</p>\r
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:1.75rem;">\r
+        <a href="/contact" class="btn-primary" data-track="inquiry_click">Send an Inquiry</a>\r
+        <a href="#" class="btn-outline" data-calendly-open>Book a Strategy Session</a>\r
+      </div>\r
+    </div>\r
+  </div>\r
+\r
+  <section style="background:var(--cream);">\r
+    <div class="sec-inner">\r
+      <div class="contact-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;">\r
+        <div>\r
+          <span class="eyebrow" id="get-in-touch" style="scroll-margin-top:100px;">Get in Touch</span>\r
+          <h2 class="section-title">Request a quote or<br/>free brand audit</h2>\r
+          <p class="section-sub">Fill in the form and we'll get back to you shortly with a tailored recommendation.</p>\r
+          <div style="display:flex;flex-direction:column;gap:1rem;margin-bottom:2rem;">\r
+            <div style="display:flex;align-items:center;gap:12px;padding:1rem;background:var(--white);border-radius:12px;border:1px solid var(--cream-dark);">\r
+              <span style="font-size:22px;">📧</span><div><p style="font-size:13px;font-weight:600;color:var(--deep);">General enquiries</p><a href="mailto:info@brandvibe.co.ke" style="font-size:13px;color:var(--crimson);text-decoration:none;font-weight:500;">info@brandvibe.co.ke</a></div>\r
+            </div>\r
+            <div style="display:flex;align-items:center;gap:12px;padding:1rem;background:var(--white);border-radius:12px;border:1px solid var(--cream-dark);">\r
+              <span style="font-size:22px;">💼</span><div><p style="font-size:13px;font-weight:600;color:var(--deep);">Careers</p><a href="mailto:recruitment@brandvibe.co.ke" style="font-size:13px;color:var(--crimson);text-decoration:none;font-weight:500;">recruitment@brandvibe.co.ke</a></div>\r
+            </div>\r
+            <div style="display:flex;align-items:center;gap:12px;padding:1rem;background:var(--white);border-radius:12px;border:1px solid var(--cream-dark);">\r
+              <span style="font-size:22px;">🕒</span><div><p style="font-size:13px;font-weight:600;color:var(--deep);">Business hours</p><p style="font-size:13px;color:var(--text-mid);">Monday – Friday · 8:00 AM – 5:00 PM EAT</p></div>\r
+            </div>\r
+            <div style="display:flex;align-items:center;gap:12px;padding:1rem;background:var(--white);border-radius:12px;border:1px solid var(--cream-dark);">\r
+              <span style="font-size:22px;">📍</span><div><p style="font-size:13px;font-weight:600;color:var(--deep);">Based in Nairobi, Kenya</p><p style="font-size:13px;color:var(--text-mid);">Serving clients across Africa and beyond</p></div>\r
+            </div>\r
+            <div style="display:flex;gap:10px;padding:1rem;background:var(--white);border-radius:12px;border:1px solid var(--cream-dark);align-items:center;">\r
+              <p style="font-size:13px;font-weight:600;color:var(--deep);margin-right:8px;">Follow us</p>\r
+              <a href="https://www.tiktok.com/@brandvibe.ke" target="_blank" class="social-icon" title="TikTok"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.75a8.18 8.18 0 004.78 1.52V6.82a4.85 4.85 0 01-1.01-.13z"/></svg></a>\r
+              <a href="https://www.instagram.com/_brandvibe/" target="_blank" class="social-icon" title="Instagram"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>\r
+              <a href="https://www.linkedin.com/company/brandvibeltd/" target="_blank" class="social-icon" title="LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>\r
+            </div>\r
+          </div>\r
+        </div>\r
+        <div id="contact-form" style="background:var(--white);border-radius:20px;padding:2.5rem;box-shadow:0 4px 32px rgba(192,57,43,0.08);border:1px solid var(--cream-dark);scroll-margin-top:100px;">\r
+          <h3 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--deep);margin-bottom:1.5rem;">Tell us about your project</h3>\r
+\r
+          <div id="form-success" role="status" aria-live="polite" style="display:none;background:#E8F7F1;border:1.5px solid #1D9E75;border-radius:10px;padding:20px;margin-bottom:1.25rem;">\r
+            <p style="font-size:15px;font-weight:700;color:#0F6E56;margin-bottom:8px;">Thank you for contacting BrandVibe.</p>\r
+            <p style="font-size:13px;color:#0F6E56;margin-bottom:14px;">Your message has been received successfully and a member of our team will get back to you shortly.</p>\r
+            <div style="border-top:1px solid #B7E4D0;padding-top:14px;margin-top:8px;">\r
+              <p style="font-size:13px;font-weight:600;color:#0F6E56;margin-bottom:8px;">Need immediate assistance?</p>\r
+              <a href="#" data-calendly-open class="btn-primary" style="display:inline-block;padding:10px 18px;font-size:13px;">Book a Strategy Session</a>\r
+            </div>\r
+          </div>\r
+\r
+          <div id="form-error" role="alert" aria-live="assertive" style="display:none;background:#FEF0EF;border:1.5px solid #C0392B;border-radius:10px;padding:16px 18px;margin-bottom:1.25rem;">\r
+            <p style="font-size:14px;font-weight:600;color:#C0392B;margin-bottom:4px;">We were unable to submit your message.</p>\r
+            <p style="font-size:13px;color:#C0392B;">Please try again or email us directly at <a href="mailto:info@brandvibe.co.ke" style="color:#C0392B;font-weight:700;">info@brandvibe.co.ke</a>.</p>\r
+          </div>\r
+\r
+          <form id="brandvibe-contact-form" action="https://formspree.io/f/mbdbvygb" method="POST" aria-label="Contact BrandVibe" style="display:flex;flex-direction:column;gap:1rem;">\r
+            <input type="hidden" name="_subject" value="New BrandVibe enquiry">\r
+            <input type="hidden" name="_replyto" value="info@brandvibe.co.ke">\r
+            <input type="text" name="_gotcha" aria-hidden="true" style="display:none;" tabindex="-1" autocomplete="off">\r
+\r
+            <div>\r
+              <label for="bv-name" style="font-size:12px;font-weight:600;color:var(--text-mid);letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:6px;">Full Name <span style="color:#C0392B;" aria-hidden="true">*</span></label>\r
+              <input id="bv-name" type="text" name="name" placeholder="Jane Wambui" required aria-required="true" autocomplete="name" style="width:100%;padding:12px 14px;border-radius:8px;border:1.5px solid var(--cream-dark);font-size:14px;font-family:'DM Sans',sans-serif;color:var(--deep);outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='#C0392B'" onblur="this.style.borderColor='#F5E0E0'">\r
+            </div>\r
+\r
+            <div>\r
+              <label for="bv-company" style="font-size:12px;font-weight:600;color:var(--text-mid);letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:6px;">Company Name</label>\r
+              <input id="bv-company" type="text" name="company" placeholder="Your Company Ltd" autocomplete="organization" style="width:100%;padding:12px 14px;border-radius:8px;border:1.5px solid var(--cream-dark);font-size:14px;font-family:'DM Sans',sans-serif;color:var(--deep);outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='#C0392B'" onblur="this.style.borderColor='#F5E0E0'">\r
+            </div>\r
+\r
+            <div>\r
+              <label for="bv-email" style="font-size:12px;font-weight:600;color:var(--text-mid);letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:6px;">Email Address <span style="color:#C0392B;" aria-hidden="true">*</span></label>\r
+              <input id="bv-email" type="email" name="email" placeholder="hello@yourcompany.com" required aria-required="true" autocomplete="email" style="width:100%;padding:12px 14px;border-radius:8px;border:1.5px solid var(--cream-dark);font-size:14px;font-family:'DM Sans',sans-serif;color:var(--deep);outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='#C0392B'" onblur="this.style.borderColor='#F5E0E0'">\r
+            </div>\r
+\r
+            <div>\r
+              <label for="bv-phone" style="font-size:12px;font-weight:600;color:var(--text-mid);letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:6px;">Phone / WhatsApp</label>\r
+              <input id="bv-phone" type="tel" name="phone" placeholder="+254 700 000 000" autocomplete="tel" style="width:100%;padding:12px 14px;border-radius:8px;border:1.5px solid var(--cream-dark);font-size:14px;font-family:'DM Sans',sans-serif;color:var(--deep);outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='#C0392B'" onblur="this.style.borderColor='#F5E0E0'">\r
+            </div>\r
+\r
+            <div>\r
+              <label for="bv-service" style="font-size:12px;font-weight:600;color:var(--text-mid);letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:6px;">Service Interested In <span style="color:#C0392B;" aria-hidden="true">*</span></label>\r
+              <select id="bv-service" name="service" required aria-required="true" style="width:100%;padding:12px 14px;border-radius:8px;border:1.5px solid var(--cream-dark);font-size:14px;font-family:'DM Sans',sans-serif;color:var(--deep);outline:none;background:#fff;transition:border-color 0.2s;" onfocus="this.style.borderColor='#C0392B'" onblur="this.style.borderColor='#F5E0E0'">\r
+                <option value="" disabled selected>Select a service...</option>\r
+                <option>Smart Business Automation</option>\r
+                <option>PR &amp; Communication</option>\r
+                <option>Digital Marketing</option>\r
+                <option>Social Media Strategy</option>\r
+                <option>Influencer Marketing</option>\r
+                <option>Business Development</option>\r
+                <option>General Inquiry</option>\r
+              </select>\r
+            </div>\r
+\r
+            <div>\r
+              <label for="bv-message" style="font-size:12px;font-weight:600;color:var(--text-mid);letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:6px;">Message <span style="color:#C0392B;" aria-hidden="true">*</span></label>\r
+              <textarea id="bv-message" name="message" placeholder="What are you trying to achieve? What is your biggest challenge?" rows="4" required aria-required="true" style="width:100%;padding:12px 14px;border-radius:8px;border:1.5px solid var(--cream-dark);font-size:14px;font-family:'DM Sans',sans-serif;color:var(--deep);outline:none;resize:vertical;transition:border-color 0.2s;" onfocus="this.style.borderColor='#C0392B'" onblur="this.style.borderColor='#F5E0E0'"></textarea>\r
+            </div>\r
+\r
+\r
+            <button type="submit" id="form-submit-btn" class="btn-primary" style="width:100%;padding:14px;font-size:15px;transition:all 0.2s;">Send Message →</button>\r
+\r
+            <p style="font-size:11px;color:var(--text-light);text-align:center;margin-top:4px;">We respond shortly. Fields marked <span style="color:#C0392B;">*</span> are required.</p>\r
+          </form>\r
+        </div>\r
+      </div>\r
+    </div>\r
+  </section>\r
+\r
+  <!-- CONSULTATION / STRATEGY SESSION -->\r
+  <section style="background:var(--white);">\r
+    <div class="sec-inner" style="text-align:center;">\r
+      <span class="eyebrow">Consultation</span>\r
+      <h2 class="section-title">Book a Strategy Session</h2>\r
+      <p class="section-sub" style="max-width:680px;margin:0 auto 2.5rem;">Let's discuss your goals, challenges, and opportunities. Whether you're exploring branding, marketing, public relations, digital growth, or business automation, our team is ready to help identify practical next steps.</p>\r
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;max-width:1000px;margin:0 auto 2.5rem;text-align:left;">\r
+        <div style="padding:1.25rem 1.4rem;background:var(--cream);border-radius:14px;border:1px solid var(--cream-dark);"><p style="font-weight:700;color:var(--deep);font-size:14px;margin-bottom:4px;">Brand Strategy Discussion</p><p style="font-size:12px;color:var(--text-mid);">Clarify positioning &amp; identity.</p></div>\r
+        <div style="padding:1.25rem 1.4rem;background:var(--cream);border-radius:14px;border:1px solid var(--cream-dark);"><p style="font-weight:700;color:var(--deep);font-size:14px;margin-bottom:4px;">Marketing Growth Review</p><p style="font-size:12px;color:var(--text-mid);">Audit current channels &amp; ROI.</p></div>\r
+        <div style="padding:1.25rem 1.4rem;background:var(--cream);border-radius:14px;border:1px solid var(--cream-dark);"><p style="font-weight:700;color:var(--deep);font-size:14px;margin-bottom:4px;">Business Automation Opportunities</p><p style="font-size:12px;color:var(--text-mid);">Streamline operations with AutoVibe.</p></div>\r
+        <div style="padding:1.25rem 1.4rem;background:var(--cream);border-radius:14px;border:1px solid var(--cream-dark);"><p style="font-weight:700;color:var(--deep);font-size:14px;margin-bottom:4px;">Lead Generation Insights</p><p style="font-size:12px;color:var(--text-mid);">Build a reliable pipeline.</p></div>\r
+        <div style="padding:1.25rem 1.4rem;background:var(--cream);border-radius:14px;border:1px solid var(--cream-dark);"><p style="font-weight:700;color:var(--deep);font-size:14px;margin-bottom:4px;">Digital Presence Assessment</p><p style="font-size:12px;color:var(--text-mid);">Web, search &amp; social health.</p></div>\r
+      </div>\r
+      <a href="#" data-calendly-open class="btn-primary" style="padding:14px 32px;font-size:15px;">Book a Strategy Session</a>\r
+    </div>\r
+  </section>\r
+\r
+  <!-- CALENDLY MODAL -->\r
+  <div id="calendly-modal" role="dialog" aria-modal="true" aria-label="Book a strategy session" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(20,10,10,0.65);backdrop-filter:blur(6px);align-items:center;justify-content:center;padding:20px;animation:cvFade 0.25s ease;">\r
+    <div class="cv-modal-shell" style="position:relative;background:var(--white);border-radius:18px;width:100%;max-width:900px;height:80vh;max-height:780px;min-height:520px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,0.35);animation:cvScale 0.3s ease;">\r
+      <button id="calendly-close" aria-label="Close" style="position:absolute;top:12px;right:12px;z-index:3;background:var(--white);border:1px solid var(--cream-dark);border-radius:50%;width:36px;height:36px;font-size:18px;cursor:pointer;color:var(--deep);box-shadow:0 2px 8px rgba(0,0,0,0.08);">×</button>\r
+\r
+      <!-- Loading state -->\r
+      <div id="calendly-loading" style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;background:#fff;z-index:1;">\r
+        <div class="cv-spinner" aria-hidden="true"></div>\r
+        <p style="font-size:13px;color:var(--text-mid);font-family:'DM Sans',sans-serif;letter-spacing:0.04em;">Loading Calendly…</p>\r
+      </div>\r
+\r
+      <!-- Error fallback -->\r
+      <div id="calendly-error" style="display:none;position:absolute;inset:0;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;padding:2rem;background:#fff;z-index:2;">\r
+        <p style="font-family:'Playfair Display',serif;font-size:22px;color:var(--deep);font-weight:700;">Calendly didn't load</p>\r
+        <p style="font-size:13px;color:var(--text-mid);max-width:380px;line-height:1.6;">It looks like Calendly is blocked or unreachable from your network. You can still book your strategy session in a new tab.</p>\r
+        <a href="https://calendly.com/brandvibe-info-pvv_/30min" target="_blank" rel="noopener" class="btn-primary" style="padding:12px 22px;font-size:14px;">Open Calendly in New Tab →</a>\r
+      </div>\r
+\r
+      <iframe id="calendly-iframe" title="Calendly scheduler" src="about:blank" frameborder="0" loading="lazy" style="position:relative;width:100%;height:100%;border:0;background:#fff;"></iframe>\r
+    </div>\r
+  </div>\r
+`;
+const SplitComponent = () => /* @__PURE__ */ jsx(PageShell, { html });
+export {
+  SplitComponent as component
+};

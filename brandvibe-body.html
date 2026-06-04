@@ -1,0 +1,722 @@
+
+<!-- ══════════════════ NAV ══════════════════ -->
+<nav id="mainNav">
+  <a class="nav-logo" onclick="showPage('home')" style="display:flex;flex-direction:column;line-height:1.2;text-decoration:none;cursor:pointer;">
+    <span style="font-family:'Playfair Display',serif;font-size:22px;font-weight:900;color:var(--deep);letter-spacing:-0.5px;">Brand<span style="color:var(--crimson);">Vibe</span></span>
+    <span style="font-size:9px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-light);">Strategy · Systems · Growth</span>
+  </a>
+  <ul class="nav-links">
+    <li><a onclick="showPage('home')" class="active" id="nav-home">Home</a></li>
+    <li><a onclick="showPage('about')" id="nav-about">About</a></li>
+    <li><a onclick="showPage('services')" id="nav-services">Services</a></li>
+    <li><a onclick="showPage('portfolio')" id="nav-portfolio">Portfolio</a></li>
+    <li><a onclick="showPage('blog')" id="nav-blog">Blog</a></li>
+    <li><a onclick="showPage('autovibe')" id="nav-autovibe">AutoVibe </a></li>
+    <li><a onclick="showPage('contact')" class="nav-cta" id="nav-contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ══════════════════════════════════════
+     HOME PAGE
+══════════════════════════════════════ -->
+<div class="page active" id="page-home">
+  <div class="hero-wrapper">
+    <div class="hero">
+      <div>
+        <span class="hero-eyebrow">Welcome to BrandVibe</span>
+        <h1 class="hero-title">We Build Brands That <em>Connect, Convert,</em> and Scale</h1>
+        <p class="hero-sub">BrandVibe is a full-service branding and marketing agency helping businesses clarify their message, grow visibility, and drive measurable results — online and offline.</p>
+        <div class="hero-ctas">
+          <a class="btn-primary" onclick="showPage('contact')">Get a Free Brand Audit →</a>
+          <a class="btn-secondary" onclick="showPage('about')">See how we work</a>
+        </div>
+      </div>
+      <div>
+        <div class="hero-card">
+          <p class="hero-card-tag">What we help with </p>
+          <h3>Built for growth-minded brands</h3>
+          <ul class="service-list">
+            <li><span class="service-dot"></span>Social Media Strategy + Posting</li>
+            <li><span class="service-dot"></span>Content Production + Storytelling</li>
+            <li><span class="service-dot"></span>Digital Campaign Support (Meta)</li>
+            <li><span class="service-dot"></span>Business Development + Partnerships</li>
+            <li><span class="service-dot"></span>Smart Business Automation (AutoVibe)</li>
+          </ul>
+          <div class="quick-plan">
+            <p>Tell us your goals and industry — we'll recommend a monthly package with clear deliverables.</p>
+            <a class="btn-white" onclick="showPage('contact')" style="display:block;text-align:center;width:100%;cursor:pointer;">Request a Quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="trust-strip">
+    <div class="trust-inner">
+      <span class="trust-label">Industries we serve</span>
+      <div class="trust-items">
+        <span class="trust-item">Startups</span><span class="trust-item">SMEs</span>
+        <span class="trust-item">NGOs</span><span class="trust-item">Government</span>
+        <span class="trust-item">Education</span><span class="trust-item">Health</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="about-section">
+    <div class="sec-inner">
+      <div class="about-grid">
+        <div>
+          <span class="eyebrow">About Brand Vibe</span>
+          <h2 class="section-title">We're your growth partner — not just a service provider.</h2>
+          <p class="section-sub">We combine online and offline marketing to create campaigns that connect with real people and drive measurable results.</p>
+          <a class="btn-primary" onclick="showPage('about')" style="cursor:pointer;">Learn more about us →</a>
+          <div class="stats-row">
+            <div class="stat-box"><div class="stat-num" data-target="40" data-suffix="+">0+</div><div class="stat-label">Brands served</div></div>
+            <div class="stat-box"><div class="stat-num" data-target="6" data-suffix="">0</div><div class="stat-label">Industries</div></div>
+            <div class="stat-box"><div class="stat-num" data-target="3" data-suffix="×">0×</div><div class="stat-label">Avg lead growth</div></div>
+          </div>
+        </div>
+        <div class="about-values">
+          <div class="value-row"><div class="value-num">01</div><div class="value-content"><h4>Strategy-first</h4><p>Every action ties to your business goals — no random posting, no wasted budget.</p></div></div>
+          <div class="value-row"><div class="value-num">02</div><div class="value-content"><h4>Consistent execution</h4><p>We plan, create, publish, and optimize monthly — so you never have to chase us.</p></div></div>
+          <div class="value-row"><div class="value-num">03</div><div class="value-content"><h4>Online + Offline</h4><p>Digital campaigns plus events and activations — we bridge both worlds.</p></div></div>
+          <div class="value-row"><div class="value-num">04</div><div class="value-content"><h4>Clear reporting</h4><p>Monthly reports with plain-English insights — what worked, what's next.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-services-section">
+    <div class="sec-inner">
+      <span class="eyebrow">Our Services</span>
+      <h2 class="section-title">Everything your brand needs to grow.</h2>
+      <p class="section-sub" style="max-width:520px;">Monthly packages with online + offline options — built around your goals. Starting from KSh 30,000/month.</p>
+      <div class="home-services-grid">
+        <div class="home-service-card"><span class="svc-tag">Social</span><h3>Social Media Marketing</h3><p>Strategy, posting, community management, and reporting — consistently, every month.</p><ul class="svc-features"><li>Content calendar + posting plan</li><li>Captions + creative direction</li><li>Monthly insights + reporting</li></ul></div>
+        <div class="home-service-card"><span class="svc-tag">Content</span><h3>Content Marketing</h3><p>Content systems that build trust and convert attention into customers.</p><ul class="svc-features"><li>Content pillars + brand voice</li><li>Reels/short-form strategy</li><li>SEO-ready blog content</li></ul></div>
+        <div class="home-service-card"><span class="svc-tag">Digital</span><h3>Digital Marketing</h3><p>Campaign support designed to convert — not just look good.</p><ul class="svc-features"><li>Meta campaign support</li><li>Landing page messaging direction</li><li>KPI tracking + optimization</li></ul></div>
+        <div class="home-service-card"><span class="svc-tag">Growth</span><h3>Business Development</h3><p>Partnership outreach and proposals that open doors.</p><ul class="svc-features"><li>Pitch + proposal support</li><li>Outreach templates + scripts</li><li>CRM structure guidance</li></ul></div>
+        <div class="home-service-card"><span class="svc-tag">Monthly</span><h3>Monthly Retainers</h3><p>We combine online + offline deliverables into a clear monthly plan.</p><ul class="svc-features"><li>Clear deliverables</li><li>Consistent execution</li><li>Reporting + next steps</li></ul></div>
+        <div class="home-service-card" style="border-color:rgba(192,57,43,0.25);"><span class="svc-tag"> AutoVibe</span><h3>Smart Automation</h3><p>Lead capture, follow-ups, CRM, WhatsApp bots — custom-built for your business.</p><ul class="svc-features"><li>Lead capture + follow-up flows</li><li>WhatsApp Business API</li><li>HR + payment automation</li></ul></div>
+      </div>
+      <div style="text-align:center;margin-top:2.5rem;"><a class="btn-primary" onclick="showPage('services','services-packages')" style="cursor:pointer;">View all packages + pricing →</a></div>
+    </div>
+  </section>
+
+  <section class="testimonials-section">
+    <div class="sec-inner">
+      <span class="eyebrow" style="color:var(--deep);"><span style="background:var(--deep);"></span>Client Stories</span>
+      <h2 class="section-title">Brands that grew with BrandVibe.</h2>
+      <p class="section-sub" style="max-width:500px;">From healthcare to tech to community impact — here's what our clients say.</p>
+      <div class="testimonials-grid">
+        <div class="testimonial-card"><div class="quote-mark">"</div><p class="quote-body">Before BrandVibe, we were relying entirely on word of mouth. Within a few months we had a brand we were proud of, a website that actually brought in patients, and a social presence our team could keep up with.</p><p class="stars">★★★★★</p><div class="client-info"><div class="client-avatar">OP</div><div><p class="client-name">Practice Manager</p><p class="client-role">OptiHaus Vision Center · Healthcare</p></div></div></div>
+        <div class="testimonial-card featured"><div class="quote-mark">"</div><p class="quote-body">We always knew our product was strong — the problem was that nobody else did. BrandVibe gave us the brand to match what we'd built. The enterprise clients started coming to us.</p><p class="stars">★★★★★</p><div class="client-info"><div class="client-avatar">TF</div><div><p class="client-name">CEO</p><p class="client-role">TechFlow Solutions · SaaS</p></div></div></div>
+        <div class="testimonial-card"><div class="quote-mark">"</div><p class="quote-body">We'd been struggling to get people through the door for our community events. BrandVibe didn't just run campaigns — they built us a promotion system we could repeat every single time.</p><p class="stars">★★★★★</p><div class="client-info"><div class="client-avatar">CA</div><div><p class="client-name">Programs Director</p><p class="client-role">Community Activation · NGO</p></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="autovibe-banner">
+    <div class="autovibe-inner">
+      <div><p class="autovibe-tag"> AutoVibe — Smart Automation</p><h2 class="autovibe-title">Stop doing manually what a system can do for you.</h2><p class="autovibe-sub">We build custom automation systems — lead follow-ups, WhatsApp bots, CRM workflows, HR onboarding, invoice automation — tailored to your business.</p><div class="autovibe-chips"><span class="chip">Lead Capture</span><span class="chip">WhatsApp API</span><span class="chip">CRM Setup</span><span class="chip">HR Onboarding</span><span class="chip">Invoice Automation</span></div></div>
+      <div class="autovibe-price-box"><p class="av-from">Projects from</p><p class="av-price">KSh 70,000</p><p class="av-note">Quoted per scope &amp;<br/>complexity</p><a class="btn-primary" onclick="showPage('autovibe')" style="display:block;text-align:center;cursor:pointer;">Learn More →</a></div>
+    </div>
+  </div>
+
+  <section class="home-cta-section">
+    <div class="sec-inner">
+      <span class="eyebrow" style="justify-content:center;">Get Started</span>
+      <h2 class="section-title" style="text-align:center;">Ready to build a brand that performs?</h2>
+      <p class="section-sub" style="text-align:center;max-width:520px;margin:0 auto 2.5rem;">Tell us your goals and industry — we'll recommend the right package and give you an exact monthly figure.</p>
+      <div class="cta-buttons"><a class="btn-primary" onclick="showPage('contact','get-in-touch')" style="cursor:pointer;">Get a Free Brand Audit →</a><a class="btn-secondary" onclick="showPage('portfolio')" style="cursor:pointer;">View our work</a></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div><div>
+  <div style="font-family:'Playfair Display',serif;font-size:20px;font-weight:900;color:var(--deep);">Brand<span style="color:var(--crimson);">Vibe</span></div>
+  <div style="font-size:9px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-light);">Strategy · Systems · Growth</div>
+</div><p class="footer-tagline">Marketing that looks good and performs better </p></div>
+      <div class="footer-links"><a onclick="showPage('services')" style="cursor:pointer;">Services</a><a onclick="showPage('portfolio')" style="cursor:pointer;">Portfolio</a><a onclick="showPage('blog')" style="cursor:pointer;">Blog</a><a onclick="showPage('contact')" style="cursor:pointer;">Contact</a></div>
+      <div class="footer-socials">
+        <a href="https://www.tiktok.com/@brandvibe.ke" target="_blank" class="social-icon" title="TikTok">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.75a8.18 8.18 0 004.78 1.52V6.82a4.85 4.85 0 01-1.01-.13z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/_brandvibe/" target="_blank" class="social-icon" title="Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/brandvibeltd/" target="_blank" class="social-icon" title="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 Brand Vibe. All rights reserved.</p>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════
+     SERVICES PAGE
+══════════════════════════════════════ -->
+<div class="page" id="page-services">
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <p class="breadcrumb">Home / <span>Services</span></p>
+      <h1 class="page-title">Monthly packages built<br/>around <em>your goals.</em></h1>
+      <p class="page-sub">Every business is different — our packages are a starting point. Tell us your goals and we'll tailor a plan with clear deliverables and transparent pricing.</p>
+      <div style="background:rgba(232,133,124,0.1);border-left:4px solid var(--coral);border-radius:0 10px 10px 0;padding:14px 18px;font-size:13px;color:rgba(255,255,255,0.75);line-height:1.7;margin-top:2rem;max-width:640px;"><strong style="color:var(--coral);">How our pricing works:</strong> The prices below are starting points. Once you request a quote and share your goals, we'll give you an exact monthly figure — no hidden fees, no surprises.</div>
+    </div>
+  </div>
+
+  <section style="background:var(--cream);">
+    <div class="sec-inner">
+      <span class="eyebrow" id="services-packages" style="scroll-margin-top:100px;">Marketing Packages</span>
+      <h2 class="section-title">Choose your growth level</h2>
+      <p class="section-sub">All packages include a dedicated point of contact, monthly reporting, and a strategy review every quarter.</p>
+      <div class="pricing-grid">
+        <div class="p-card"><p class="tier-name">Starter</p><p class="tier-from">From</p><p class="tier-price">KSh 30,000 <span>/month</span></p><p class="tier-desc">For small businesses and startups getting their brand foundations right.</p><ul class="feature-list"><li>Social media strategy</li><li>Content calendar (8 posts/month)</li><li>Captions + creative direction</li><li>Monthly insights report</li><li class="muted">Meta campaign support</li><li class="muted">SEO blog content</li><li class="muted">Business development</li></ul><a class="btn-outline" onclick="showPage('contact','get-in-touch')" style="cursor:pointer;">Request a quote</a></div>
+        <div class="p-card popular"><span class="popular-badge">Most Popular</span><p class="tier-name">Growth</p><p class="tier-from">From</p><p class="tier-price">KSh 60,000 <span>/month</span></p><p class="tier-desc">For growing brands ready to scale online and offline with a full strategy.</p><ul class="feature-list"><li>Everything in Starter</li><li>Content production + storytelling</li><li>Meta campaign support</li><li>SEO-ready blog content</li><li>Landing page direction</li><li>KPI tracking + optimization</li><li class="muted">Business development</li></ul><a class="btn-primary" onclick="showPage('contact','get-in-touch')" style="display:block;text-align:center;cursor:pointer;">Request a quote</a></div>
+        <div class="p-card"><p class="tier-name">Premium</p><p class="tier-from">From</p><p class="tier-price">KSh 120,000 <span>/month</span></p><p class="tier-desc">For established brands that want full-service marketing support.</p><ul class="feature-list"><li>Everything in Growth</li><li>Business development support</li><li>Pitch + proposal support</li><li>Outreach templates + scripts</li><li>CRM structure guidance</li><li>Dedicated account manager</li><li>Simple reporting + next steps</li></ul><a class="btn-outline" onclick="showPage('contact','get-in-touch')" style="cursor:pointer;">Request a quote</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="av-section">
+    <div class="sec-inner">
+      <div class="av-wrap">
+        <span class="av-badge"> AutoVibe — Smart Automation</span>
+        <div class="av-top">
+          <div><h2 class="av-title">Automate your business.<br/>Work smarter, not harder.</h2><p class="av-sub">From lead follow-ups to HR onboarding — we build custom automation systems that save your team hours every week. Every project is scoped and quoted individually.</p></div>
+          <div class="av-price-box-dark"><p class="av-from">Projects from</p><p class="av-price">KSh 70,000</p><p class="av-note">Quoted per scope &amp;<br/>complexity</p><a class="btn-coral" onclick="showPage('contact','get-in-touch')" style="cursor:pointer;">Request a quote →</a></div>
+        </div>
+        <div class="av-services-grid">
+          <div class="av-service"><div class="av-service-icon"></div><p class="av-service-name">Lead Capture &amp; Follow-up</p><p class="av-service-desc">Automated sequences that convert cold leads 24/7.</p></div>
+          <div class="av-service"><div class="av-service-icon"></div><p class="av-service-name">WhatsApp &amp; Chatbot</p><p class="av-service-desc">Instant responses, booking, and FAQs — automated.</p></div>
+          <div class="av-service"><div class="av-service-icon"></div><p class="av-service-name">CRM &amp; Workflow</p><p class="av-service-desc">Pipelines, task triggers, and team workflows connected.</p></div>
+          <div class="av-service"><div class="av-service-icon"></div><p class="av-service-name">Invoice &amp; Payments</p><p class="av-service-desc">Automated invoicing, reminders, and reconciliation.</p></div>
+          <div class="av-service"><div class="av-service-icon"></div><p class="av-service-name">HR &amp; Onboarding</p><p class="av-service-desc">Staff onboarding, documents, scheduling — on autopilot.</p></div>
+          <div class="av-service"><div class="av-service-icon"></div><p class="av-service-name">Marketing Automation</p><p class="av-service-desc">Email campaigns, scheduling, and re-engagement flows.</p></div>
+        </div>
+        <div class="av-bottom"><p class="av-bottom-note">Every AutoVibe project is custom-built. We audit your workflow, find the gaps, build the system, and hand it over fully tested.</p><a class="btn-coral" onclick="showPage('autovibe')" style="cursor:pointer;">Learn more about AutoVibe →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--cream);">
+    <div class="sec-inner">
+      <span class="eyebrow">Add-on Service</span>
+      <h2 class="section-title">Events &amp; Activations</h2>
+      <p class="section-sub">Add to any marketing package or book as a standalone project.</p>
+      <div class="addon-card">
+        <div><p class="addon-tag">➕ Add-on</p><h3 class="addon-title">Events &amp; Activations</h3><p class="addon-desc">Offline experiences that grow brand awareness and community credibility — planned, promoted, and coordinated by our team.</p><div class="pills"><span class="pill">Event concept + messaging</span><span class="pill">Promotion plan (online + offline)</span><span class="pill">Coordination support</span><span class="pill">Content capture</span></div></div>
+        <div class="addon-right"><p class="addon-from">From</p><p class="addon-price">KSh 50,000 <span>/event</span></p><a class="btn-outline" onclick="showPage('contact','get-in-touch')" style="cursor:pointer;">Request a quote</a></div>
+      </div>
+      <div class="cta-strip"><div><h3>Not sure which package fits?</h3><p>Tell us your goals and industry — we'll recommend the right plan with exact pricing within 48 hours.</p></div><a class="btn-white" onclick="showPage('contact','get-in-touch')" style="cursor:pointer;">Request a Quote →</a></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div><div>
+  <div style="font-family:'Playfair Display',serif;font-size:20px;font-weight:900;color:var(--deep);">Brand<span style="color:var(--crimson);">Vibe</span></div>
+  <div style="font-size:9px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-light);">Strategy · Systems · Growth</div>
+</div><p class="footer-tagline">Marketing that looks good and performs better </p></div>
+      <div class="footer-links"><a onclick="showPage('home')" style="cursor:pointer;">Home</a><a onclick="showPage('portfolio')" style="cursor:pointer;">Portfolio</a><a onclick="showPage('blog')" style="cursor:pointer;">Blog</a><a onclick="showPage('contact')" style="cursor:pointer;">Contact</a></div>
+      <div class="footer-socials"><a href="https://www.tiktok.com/@brandvibe.ke" target="_blank" class="social-icon" title="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.75a8.18 8.18 0 004.78 1.52V6.82a4.85 4.85 0 01-1.01-.13z"/></svg></a><a href="https://www.instagram.com/_brandvibe/" target="_blank" class="social-icon" title="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a><a href="https://www.linkedin.com/company/brandvibeltd/" target="_blank" class="social-icon" title="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></div>
+    </div>
+    <p class="footer-copy">© 2026 Brand Vibe. All rights reserved.</p>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════
+     PORTFOLIO PAGE
+══════════════════════════════════════ -->
+<div class="page" id="page-portfolio">
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <p class="breadcrumb">Home / <span>Portfolio</span></p>
+      <h1 class="page-title">Our work <em>speaks</em><br/>for itself.</h1>
+      <p class="page-sub">Real case studies from brands we've transformed — strategies, challenges, and measurable results.</p>
+      <div class="filter-tabs"><span class="filter-tab active">All</span><span class="filter-tab">Healthcare</span><span class="filter-tab">Technology &amp; SaaS</span><span class="filter-tab">NGOs</span><span class="filter-tab">Automation</span></div>
+    </div>
+  </div>
+
+  <section style="background:var(--cream);">
+    <div class="sec-inner">
+      <span class="eyebrow">Marketing Case Studies</span>
+      <h2 class="section-title">Brands we've grown</h2>
+      <div class="cases-grid">
+        <div class="case-card dark-card"><p class="case-industry">Healthcare &amp; Wellness</p><span class="featured-badge">Featured</span><h3 class="case-name">OptiHaus Vision Center</h3><p class="case-label">Challenge</p><p class="case-text">OptiHaus struggled with low online visibility and unclear positioning in a competitive eyecare market. Their website was outdated and social media presence was minimal — resulting in lost patient acquisition opportunities.</p><p class="case-label">Results — within 6 months</p><div class="metrics-grid"><div class="metric"><p class="metric-num">45%</p><p class="metric-label">Increase in website traffic</p></div><div class="metric"><p class="metric-num">120%</p><p class="metric-label">More online bookings</p></div><div class="metric"><p class="metric-num">3×</p><p class="metric-label">Social media followers</p></div><div class="metric"><p class="metric-num">★ 4.8</p><p class="metric-label">Average patient review</p></div></div><div class="services-pills"><span class="s-pill">Brand Strategy</span><span class="s-pill">Website Design</span><span class="s-pill">SEO</span><span class="s-pill">Social Media</span></div><div class="case-quote"><p>"Before BrandVibe, we were relying entirely on word of mouth. Within a few months we had a brand we were proud of."</p><span>— Practice Manager, OptiHaus Vision Center</span></div></div>
+        <div class="case-card"><p class="case-industry">Technology &amp; SaaS</p><span class="featured-badge">Featured</span><h3 class="case-name">TechFlow Solutions</h3><p class="case-label">Challenge</p><p class="case-text">TechFlow had a solid product but a brand that blended into the background. Generic messaging and a weak LinkedIn presence made every enterprise deal harder to close.</p><p class="case-label">Results — within 12 months</p><div class="metrics-grid"><div class="metric"><p class="metric-num">200%</p><p class="metric-label">Increase in qualified leads</p></div><div class="metric"><p class="metric-num">65%</p><p class="metric-label">Faster sales cycle</p></div><div class="metric"><p class="metric-num">8</p><p class="metric-label">Enterprise clients secured</p></div><div class="metric"><p class="metric-num">15K+</p><p class="metric-label">LinkedIn followers gained</p></div></div><div class="services-pills"><span class="s-pill">Brand Identity</span><span class="s-pill">Messaging</span><span class="s-pill">Website Redesign</span><span class="s-pill">LinkedIn Strategy</span></div><div class="case-quote"><p>"BrandVibe gave us the brand to match what we'd built. The enterprise clients started coming to us."</p><span>— CEO, TechFlow Solutions</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--blush);padding:5rem 3rem;">
+    <div class="sec-inner">
+      <span class="eyebrow on-blush" style="color:var(--deep);"><span style="display:inline-block;width:20px;height:2px;background:var(--crimson);border-radius:2px;flex-shrink:0;margin-right:0;"></span>AutoVibe Automation Case Studies</span>
+      <h2 class="section-title">Businesses we've automated</h2>
+      <p class="section-sub" style="max-width:520px;">Two very different businesses — two completely different automation challenges. Both solved by AutoVibe.</p>
+      <div class="auto-cases-grid">
+
+        <!-- Elimika Africa — blush card -->
+        <div class="case-card" style="background:var(--white);border:1.5px solid var(--cream-dark);border-top:4px solid #E85D0C;transition:all 0.25s;">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;">
+            <div>
+              <p style="font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#E85D0C;margin-bottom:4px;">Education &amp; EdTech</p>
+              <span style="display:inline-block;background:#E85D0C;color:#fff;font-size:10px;font-weight:700;padding:3px 10px;border-radius:999px;letter-spacing:0.06em;text-transform:uppercase;">AutoVibe</span>
+            </div>
+            <div style="background:rgba(232,93,12,0.08);border-radius:10px;padding:8px 12px;text-align:center;">
+              <p style="font-size:10px;font-weight:600;color:#E85D0C;letter-spacing:0.06em;text-transform:uppercase;">90 days</p>
+            </div>
+          </div>
+          <h3 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:900;color:var(--deep);margin-bottom:1rem;">Elimika Africa</h3>
+          <p style="font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#E85D0C;margin-bottom:5px;">Challenge</p>
+          <p style="font-size:13px;color:var(--text-mid);line-height:1.7;margin-bottom:1.25rem;">Elimika Africa had a strong course catalogue but a fully manual enrollment process. Prospective students went cold — no system existed to follow up, nurture, or guide them to enrollment.</p>
+          <p style="font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#E85D0C;margin-bottom:8px;">Results — 90 days</p>
+          <div class="metrics-grid" style="margin-bottom:1.25rem;">
+            <div class="metric" style="background:rgba(232,93,12,0.06);border:1px solid rgba(232,93,12,0.15);"><p class="metric-num" style="color:#E85D0C;">3×</p><p class="metric-label">Enrollment rate</p></div>
+            <div class="metric" style="background:rgba(232,93,12,0.06);border:1px solid rgba(232,93,12,0.15);"><p class="metric-num" style="color:#E85D0C;">60s</p><p class="metric-label">Lead response time</p></div>
+            <div class="metric" style="background:rgba(232,93,12,0.06);border:1px solid rgba(232,93,12,0.15);"><p class="metric-num" style="color:#E85D0C;">68%</p><p class="metric-label">Email open rate</p></div>
+            <div class="metric" style="background:rgba(232,93,12,0.06);border:1px solid rgba(232,93,12,0.15);"><p class="metric-num" style="color:#E85D0C;">0</p><p class="metric-label">Manual follow-ups</p></div>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px;">
+            <span style="font-size:11px;font-weight:500;padding:4px 10px;border-radius:999px;background:rgba(232,93,12,0.08);color:#E85D0C;border:1px solid rgba(232,93,12,0.2);">Lead Capture</span>
+            <span style="font-size:11px;font-weight:500;padding:4px 10px;border-radius:999px;background:rgba(232,93,12,0.08);color:#E85D0C;border:1px solid rgba(232,93,12,0.2);">Email Sequences</span>
+            <span style="font-size:11px;font-weight:500;padding:4px 10px;border-radius:999px;background:rgba(232,93,12,0.08);color:#E85D0C;border:1px solid rgba(232,93,12,0.2);">WhatsApp API</span>
+            <span style="font-size:11px;font-weight:500;padding:4px 10px;border-radius:999px;background:rgba(232,93,12,0.08);color:#E85D0C;border:1px solid rgba(232,93,12,0.2);">CRM Setup</span>
+          </div>
+        </div>
+
+        <!-- OptiHaus — blush card -->
+        <div class="case-card" style="background:var(--white);border:1.5px solid var(--cream-dark);border-top:4px solid var(--crimson);transition:all 0.25s;">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;">
+            <div>
+              <p style="font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--crimson);margin-bottom:4px;">Healthcare</p>
+              <span style="display:inline-block;background:var(--crimson);color:#fff;font-size:10px;font-weight:700;padding:3px 10px;border-radius:999px;letter-spacing:0.06em;text-transform:uppercase;">AutoVibe</span>
+            </div>
+            <div style="background:rgba(192,57,43,0.07);border-radius:10px;padding:8px 12px;text-align:center;">
+              <p style="font-size:10px;font-weight:600;color:var(--crimson);letter-spacing:0.06em;text-transform:uppercase;">60 days</p>
+            </div>
+          </div>
+          <h3 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:900;color:var(--deep);margin-bottom:1rem;">OptiHaus Vision Center</h3>
+          <p style="font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--crimson);margin-bottom:5px;">Challenge</p>
+          <p style="font-size:13px;color:var(--text-mid);line-height:1.7;margin-bottom:1.25rem;">New staff were arriving on day one with no access, no schedule, and no role brief. HR was spending 2–3 days per hire just coordinating paperwork and introductions manually.</p>
+          <p style="font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--crimson);margin-bottom:8px;">Results — 60 days</p>
+          <div class="metrics-grid" style="margin-bottom:1.25rem;">
+            <div class="metric"><p class="metric-num">80%</p><p class="metric-label">HR admin time saved</p></div>
+            <div class="metric"><p class="metric-num">1 day</p><p class="metric-label">Onboarding (was 3)</p></div>
+            <div class="metric"><p class="metric-num">100%</p><p class="metric-label">Docs before day one</p></div>
+            <div class="metric"><p class="metric-num">0</p><p class="metric-label">Manual emails sent</p></div>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px;">
+            <span style="font-size:11px;font-weight:500;padding:4px 10px;border-radius:999px;background:rgba(192,57,43,0.07);color:var(--crimson);">HR Onboarding</span>
+            <span style="font-size:11px;font-weight:500;padding:4px 10px;border-radius:999px;background:rgba(192,57,43,0.07);color:var(--crimson);">Document Collection</span>
+            <span style="font-size:11px;font-weight:500;padding:4px 10px;border-radius:999px;background:rgba(192,57,43,0.07);color:var(--crimson);">Welcome Sequences</span>
+            <span style="font-size:11px;font-weight:500;padding:4px 10px;border-radius:999px;background:rgba(192,57,43,0.07);color:var(--crimson);">Task Routing</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA -->
+      <div class="portfolio-cta" style="margin-top:2.5rem;">
+        <h2>Ready to be our next case study?</h2>
+        <p>Tell us your goals — we'll build a strategy and show you exactly what results to expect.</p>
+        <a class="btn-white" onclick="showPage('contact','get-in-touch')" style="cursor:pointer;">Work with us →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div><div>
+  <div style="font-family:'Playfair Display',serif;font-size:20px;font-weight:900;color:var(--deep);">Brand<span style="color:var(--crimson);">Vibe</span></div>
+  <div style="font-size:9px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-light);">Strategy · Systems · Growth</div>
+</div><p class="footer-tagline">Marketing that looks good and performs better </p></div>
+      <div class="footer-links"><a onclick="showPage('home')" style="cursor:pointer;">Home</a><a onclick="showPage('services')" style="cursor:pointer;">Services</a><a onclick="showPage('blog')" style="cursor:pointer;">Blog</a><a onclick="showPage('contact')" style="cursor:pointer;">Contact</a></div>
+      <div class="footer-socials"><a href="https://www.tiktok.com/@brandvibe.ke" target="_blank" class="social-icon" title="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.75a8.18 8.18 0 004.78 1.52V6.82a4.85 4.85 0 01-1.01-.13z"/></svg></a><a href="https://www.instagram.com/_brandvibe/" target="_blank" class="social-icon" title="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a><a href="https://www.linkedin.com/company/brandvibeltd/" target="_blank" class="social-icon" title="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></div>
+    </div>
+    <p class="footer-copy">© 2026 Brand Vibe. All rights reserved.</p>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════
+     ABOUT PAGE
+══════════════════════════════════════ -->
+<div class="page" id="page-about">
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <p class="breadcrumb">Home / <span>About</span></p>
+      <div class="about-hero-grid">
+        <div>
+          <h1 class="page-title">A team that treats your brand like a <em>real business.</em></h1>
+          <p class="page-sub">BrandVibe is made up of strategists, creatives, and digital specialists who've worked across industries — from healthcare and education to tech startups and NGOs.</p>
+        </div>
+        <div class="promise-box">
+          <p class="promise-title">Our Promise</p>
+          <p class="promise-text">We don't just execute campaigns. We build systems that make marketing consistent, measurable, and scalable — so your team can focus on running the business.</p>
+          <p class="ind-label">Industries we serve</p>
+          <div class="ind-pills"><span class="ind-pill">Healthcare</span><span class="ind-pill">Tech &amp; SaaS</span><span class="ind-pill">NGOs</span><span class="ind-pill">Education</span><span class="ind-pill">Agriculture</span><span class="ind-pill">Finance</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section style="background:var(--cream);">
+    <div class="sec-inner">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;">
+        <div><span class="eyebrow">Our Mission</span><h2 class="section-title">Help brands communicate better and grow faster.</h2><p class="section-sub">We're built for teams that want real growth — not random posting. We create clear systems that make marketing consistent, measurable, and scalable.</p><div style="display:flex;gap:12px;flex-wrap:wrap;"><a class="btn-primary" onclick="showPage('services','services-packages')" style="cursor:pointer;">Explore services</a><a class="btn-secondary" onclick="showPage('contact','get-in-touch')" style="cursor:pointer;">Work with us</a></div></div>
+        <div class="mission-boxes"><div class="mission-box"><p class="mission-box-label">Clarity</p><p class="mission-box-text">Messaging and positioning that people understand at first glance.</p></div><div class="mission-box"><p class="mission-box-label">Consistency</p><p class="mission-box-text">A monthly plan you can rely on — no chasing, no guessing.</p></div><div class="mission-box"><p class="mission-box-label">Growth</p><p class="mission-box-text">Reporting and optimization to improve results every single month.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--white);">
+    <div class="sec-inner">
+      <div class="about-layout">
+        <div><span class="eyebrow">Who We Are</span><h2 class="section-title">Strategy. Execution. Results.</h2><p class="section-sub">We combine online and offline marketing to create campaigns that connect with real people and drive real results.</p></div>
+        <div class="about-values">
+          <div class="value-row"><div class="value-num">01</div><div class="value-content"><h4>Strategy before execution</h4><p>Every campaign starts with a clear goal. We don't post for the sake of posting.</p></div></div>
+          <div class="value-row"><div class="value-num">02</div><div class="value-content"><h4>Results you can actually see</h4><p>We report on leads, conversions, reach, and growth — not vanity metrics.</p></div></div>
+          <div class="value-row"><div class="value-num">03</div><div class="value-content"><h4>Long-term partnerships</h4><p>We build relationships with brands that want to grow consistently — month after month.</p></div></div>
+          <div class="value-row"><div class="value-num">04</div><div class="value-content"><h4>Online + Offline expertise</h4><p>From Meta campaigns to in-person activations — we bridge the gap.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-section">
+    <div class="sec-inner">
+      <span class="eyebrow" style="color:var(--coral);"><span style="display:inline-block;width:20px;height:2px;background:var(--coral);border-radius:2px;flex-shrink:0;"></span>How We Work</span>
+      <h2 class="section-title" style="color:#fff;">Every client. Same proven process.</h2>
+      <p style="font-size:15px;color:rgba(255,255,255,0.45);line-height:1.8;margin-bottom:2.5rem;max-width:520px;">Built for clarity, consistency, and results from day one.</p>
+      <div class="how-grid">
+        <div class="how-step"><p class="step-num">Step 01</p><div class="step-icon"></div><h3 class="step-title">Audit &amp; Strategy</h3><p class="step-desc">We review your current brand, audience, and goals — then build a plan around what will actually move the needle.</p></div>
+        <div class="how-step"><p class="step-num">Step 02</p><div class="step-icon"></div><h3 class="step-title">Build &amp; Execute</h3><p class="step-desc">Content, campaigns, automations, events — we plan, create, and deliver everything on a clear monthly schedule.</p></div>
+        <div class="how-step"><p class="step-num">Step 03</p><div class="step-icon"></div><h3 class="step-title">Report &amp; Optimise</h3><p class="step-desc">Monthly reports with plain-English insights — what worked, what didn't, and exactly what we're doing next.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-stats-section">
+    <div class="sec-inner">
+      <div class="about-stats-grid">
+        <div class="about-stat"><p class="about-stat-num" data-target="40" data-suffix="+">0+</p><p class="about-stat-label">Brands worked with</p></div>
+        <div class="about-stat"><p class="about-stat-num" data-target="6" data-suffix="">0</p><p class="about-stat-label">Industries served</p></div>
+        <div class="about-stat"><p class="about-stat-num" data-target="3" data-suffix="×">0×</p><p class="about-stat-label">Average lead growth</p></div>
+        <div class="about-stat"><p class="about-stat-num" data-target="100" data-suffix="%">0%</p><p class="about-stat-label">Monthly retainer retention</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="industries-section">
+    <div class="sec-inner">
+      <span class="eyebrow">Industries</span>
+      <h2 class="section-title">We've worked across six sectors</h2>
+      <p class="section-sub">Each with its own audience, challenges, and opportunities.</p>
+      <div class="industries-grid">
+        <div class="industry-card"><div class="industry-icon"></div><p class="industry-name">Healthcare &amp; Wellness</p><p class="industry-desc">Patient acquisition, brand trust, and digital presence for clinics.</p></div>
+        <div class="industry-card"><div class="industry-icon"></div><p class="industry-name">Technology &amp; SaaS</p><p class="industry-desc">B2B positioning, LinkedIn strategy, and sales enablement for tech companies.</p></div>
+        <div class="industry-card"><div class="industry-icon"></div><p class="industry-name">NGOs &amp; Public Sector</p><p class="industry-desc">Community engagement, donor communication, and program promotion.</p></div>
+        <div class="industry-card"><div class="industry-icon"></div><p class="industry-name">Education &amp; EdTech</p><p class="industry-desc">Student enrollment flows, brand awareness, and course marketing.</p></div>
+        <div class="industry-card"><div class="industry-icon"></div><p class="industry-name">Agriculture</p><p class="industry-desc">Market positioning and digital reach for agri-businesses.</p></div>
+        <div class="industry-card"><div class="industry-icon"></div><p class="industry-name">Banking &amp; Finance</p><p class="industry-desc">Trust-first marketing and client onboarding communications.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-cta" style="background:var(--white);text-align:center;">
+    <div class="sec-inner">
+      <div class="about-cta-inner">
+        <span class="eyebrow" style="justify-content:center;">Get Started</span>
+        <h2 class="section-title">Ready to work with a team that gets it?</h2>
+        <p class="section-sub">Tell us your goals — we'll put together a plan that fits your business and your budget.</p>
+        <div style="display:flex;justify-content:center;gap:14px;flex-wrap:wrap;"><a class="btn-primary" onclick="showPage('contact','get-in-touch')" style="cursor:pointer;">Work with us →</a><a class="btn-secondary" onclick="showPage('services')" style="cursor:pointer;">See our services</a></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div><div>
+  <div style="font-family:'Playfair Display',serif;font-size:20px;font-weight:900;color:var(--deep);">Brand<span style="color:var(--crimson);">Vibe</span></div>
+  <div style="font-size:9px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-light);">Strategy · Systems · Growth</div>
+</div><p class="footer-tagline">Marketing that looks good and performs better </p></div>
+      <div class="footer-links"><a onclick="showPage('home')" style="cursor:pointer;">Home</a><a onclick="showPage('services')" style="cursor:pointer;">Services</a><a onclick="showPage('portfolio')" style="cursor:pointer;">Portfolio</a><a onclick="showPage('contact')" style="cursor:pointer;">Contact</a></div>
+      <div class="footer-socials"><a href="https://www.tiktok.com/@brandvibe.ke" target="_blank" class="social-icon" title="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.75a8.18 8.18 0 004.78 1.52V6.82a4.85 4.85 0 01-1.01-.13z"/></svg></a><a href="https://www.instagram.com/_brandvibe/" target="_blank" class="social-icon" title="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a><a href="https://www.linkedin.com/company/brandvibeltd/" target="_blank" class="social-icon" title="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></div>
+    </div>
+    <p class="footer-copy">© 2026 Brand Vibe. All rights reserved.</p>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════
+     BLOG PAGE
+══════════════════════════════════════ -->
+<div class="page" id="page-blog">
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <p class="breadcrumb">Home / <span>Blog</span></p>
+      <h1 class="page-title">Practical <em>marketing insights</em><br/>for growing businesses.</h1>
+      <p class="page-sub">Guides, strategies, and real-world advice — written for business owners who want results, not theory.</p>
+    </div>
+  </div>
+
+  <section style="background:var(--cream);">
+    <div class="sec-inner">
+      <span class="eyebrow">Featured Article</span>
+      <div class="featured-post">
+        <div><p class="feat-tag">Content · Feb 2026</p><h2 class="feat-title">Content Marketing Guide: Creating Content That Converts</h2><p class="feat-meta">By BrandVibe Team · 8 min read</p><p class="feat-excerpt">Content is king, but not all content is created equal. Learn a strategic approach that drives real business results — from content pillars to distribution and optimization.</p><a class="btn-primary" style="cursor:pointer;">Read the full guide →</a></div>
+        <div class="feat-preview"><p class="preview-label">From the article</p><p class="preview-intro">Most content fails not because it's bad — but because it's disconnected from a business goal.</p><p class="preview-text">The brands that win with content aren't posting more — they're posting with a system. A content pillar strategy, a consistent brand voice, and a clear call to action at every stage of the funnel...</p></div>
+      </div>
+
+      <h2 style="font-family:'Playfair Display',serif;font-size:24px;font-weight:900;color:var(--deep);margin-bottom:1.5rem;">All Articles</h2>
+      <div class="blog-grid">
+        <div class="blog-card"><div class="blog-card-img bg2"></div><div class="blog-card-body"><span class="blog-tag">Strategy</span><h3 class="blog-title">Marketing Strategy: How to Build a Clear Brand Message That Attracts Customers</h3><p class="blog-meta">2026 · BrandVibe Team · 5 min read</p><p class="blog-excerpt">Most businesses don't have a marketing problem — they have a clarity problem. Here's how to fix it.</p><a class="blog-link" style="cursor:pointer;">Read article →</a></div></div>
+        <div class="blog-card"><div class="blog-card-img bg3">📱</div><div class="blog-card-body"><span class="blog-tag">Social</span><h3 class="blog-title">Social Media Growth: How to Post Consistently Without Burning Out</h3><p class="blog-meta">2026 · BrandVibe Team · 5 min read</p><p class="blog-excerpt">Consistency beats virality. Here's how to build a social media system that works — even when motivation runs dry.</p><a class="blog-link" style="cursor:pointer;">Read article →</a></div></div>
+        <div class="blog-card"><div class="blog-card-img bg1">✍️</div><div class="blog-card-body"><span class="blog-tag">Content</span><h3 class="blog-title">Content Marketing Guide: Creating Content That Converts</h3><p class="blog-meta">Feb 2026 · BrandVibe Team · 8 min read</p><p class="blog-excerpt">Learn a strategic approach to content that drives real business results — not just likes and shares.</p><a class="blog-link" style="cursor:pointer;">Read article →</a></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter-section">
+    <div class="newsletter-inner">
+      <h2 class="nl-title">Get insights in your inbox</h2>
+      <p class="nl-sub">Practical marketing tips and BrandVibe updates — once a month. No spam, no fluff.</p>
+      <div class="nl-form"><input class="nl-input" type="email" placeholder="Your email address"><button class="nl-btn">Subscribe →</button></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div><div>
+  <div style="font-family:'Playfair Display',serif;font-size:20px;font-weight:900;color:var(--deep);">Brand<span style="color:var(--crimson);">Vibe</span></div>
+  <div style="font-size:9px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-light);">Strategy · Systems · Growth</div>
+</div><p class="footer-tagline">Marketing that looks good and performs better </p></div>
+      <div class="footer-links"><a onclick="showPage('home')" style="cursor:pointer;">Home</a><a onclick="showPage('services')" style="cursor:pointer;">Services</a><a onclick="showPage('portfolio')" style="cursor:pointer;">Portfolio</a><a onclick="showPage('contact')" style="cursor:pointer;">Contact</a></div>
+      <div class="footer-socials"><a href="https://www.tiktok.com/@brandvibe.ke" target="_blank" class="social-icon" title="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.75a8.18 8.18 0 004.78 1.52V6.82a4.85 4.85 0 01-1.01-.13z"/></svg></a><a href="https://www.instagram.com/_brandvibe/" target="_blank" class="social-icon" title="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a><a href="https://www.linkedin.com/company/brandvibeltd/" target="_blank" class="social-icon" title="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></div>
+    </div>
+    <p class="footer-copy">© 2026 Brand Vibe. All rights reserved.</p>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════
+     AUTOVIBE PAGE
+══════════════════════════════════════ -->
+<div class="page autovibe-page" id="page-autovibe">
+  <div class="av-hero">
+    <div class="av-hero-inner">
+      <div>
+        <span class="av-hero-badge"> AutoVibe — Smart Automation</span>
+        <h1 class="av-hero-title">Stop doing manually<br/>what a <em>system</em> can do for you.</h1>
+        <p class="av-hero-sub">AutoVibe builds custom business automation systems — from lead follow-ups to HR onboarding — so your team spends time on what actually grows the business.</p>
+        <div class="av-hero-ctas"><a class="btn-crimson" onclick="showPage('contact','get-in-touch')" style="cursor:pointer;">Request a quote →</a><a class="btn-ghost">See how it works ↓</a></div>
+        <div class="av-hero-stats">
+          <div><p class="av-stat-num">60s</p><p class="av-stat-label">Avg lead response time</p></div>
+          <div><p class="av-stat-num">0</p><p class="av-stat-label">Manual follow-ups</p></div>
+          <div><p class="av-stat-num">3×</p><p class="av-stat-label">Avg conversion increase</p></div>
+          <div><p class="av-stat-num">4 wks</p><p class="av-stat-label">Average build time</p></div>
+        </div>
+      </div>
+      <div class="av-hero-card">
+        <p class="av-card-title">What we automate</p>
+        <ul class="av-type-list">
+          <li class="av-type-item"><span class="av-type-icon"></span><div><p class="av-type-name">Lead Capture &amp; Follow-up</p><p class="av-type-desc">Convert leads 24/7 without manual effort</p></div></li>
+          <li class="av-type-item"><span class="av-type-icon"></span><div><p class="av-type-name">WhatsApp &amp; Chatbot</p><p class="av-type-desc">Instant responses, FAQs, and booking</p></div></li>
+          <li class="av-type-item"><span class="av-type-icon"></span><div><p class="av-type-name">CRM &amp; Workflow</p><p class="av-type-desc">Pipelines and task triggers connected</p></div></li>
+          <li class="av-type-item"><span class="av-type-icon"></span><div><p class="av-type-name">Invoice &amp; Payments</p><p class="av-type-desc">Automated billing and reminders</p></div></li>
+          <li class="av-type-item"><span class="av-type-icon"></span><div><p class="av-type-name">HR &amp; Onboarding</p><p class="av-type-desc">Staff onboarding on autopilot</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section class="av-auto-section" style="padding:5rem 3rem;">
+    <div class="sec-inner">
+      <span class="eyebrow">Automation Types</span>
+      <h2 class="section-title" style="color:#fff;">Built for African businesses.</h2>
+      <p style="font-size:15px;color:rgba(255,255,255,0.4);line-height:1.8;margin-bottom:2.5rem;max-width:500px;">Every system is custom-designed around how your business actually works.</p>
+      <div class="automations-grid">
+        <div class="auto-card"><div class="auto-icon"></div><p class="auto-name">Lead Capture &amp; Follow-up</p><p class="auto-desc">Never lose a lead to slow response. Instant email + WhatsApp follow-ups that nurture prospects until they convert.</p><div class="auto-exs"><span class="auto-ex">Instant welcome</span><span class="auto-ex">5-email nurture</span><span class="auto-ex">Enrollment push</span></div></div>
+        <div class="auto-card"><div class="auto-icon"></div><p class="auto-name">WhatsApp &amp; Chatbot</p><p class="auto-desc">Respond to inquiries, answer FAQs, book appointments — through WhatsApp, automatically, 24/7.</p><div class="auto-exs"><span class="auto-ex">WhatsApp API</span><span class="auto-ex">FAQ bot</span><span class="auto-ex">Appointment booking</span></div></div>
+        <div class="auto-card"><div class="auto-icon"></div><p class="auto-name">CRM &amp; Workflow</p><p class="auto-desc">Connect your tools, automate task assignments, and build pipelines that move leads without manual input.</p><div class="auto-exs"><span class="auto-ex">Pipeline setup</span><span class="auto-ex">Task triggers</span><span class="auto-ex">Notifications</span></div></div>
+        <div class="auto-card"><div class="auto-icon"></div><p class="auto-name">Invoice &amp; Payment</p><p class="auto-desc">Automated invoicing, payment reminders, and reconciliation — so finance spends less time chasing.</p><div class="auto-exs"><span class="auto-ex">Auto-invoicing</span><span class="auto-ex">Reminders</span><span class="auto-ex">Reconciliation</span></div></div>
+        <div class="auto-card"><div class="auto-icon"></div><p class="auto-name">HR &amp; Onboarding</p><p class="auto-desc">From offer letters to first-day schedules — automate staff onboarding for a consistent experience.</p><div class="auto-exs"><span class="auto-ex">Document collection</span><span class="auto-ex">Welcome sequences</span><span class="auto-ex">Scheduling</span></div></div>
+        <div class="auto-card"><div class="auto-icon"></div><p class="auto-name">Marketing Automation</p><p class="auto-desc">Email campaigns, social scheduling, re-engagement sequences, and reporting — running in the background.</p><div class="auto-exs"><span class="auto-ex">Email campaigns</span><span class="auto-ex">Re-engagement</span><span class="auto-ex">Auto-reporting</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process-section" style="padding:5rem 3rem;">
+    <div class="sec-inner">
+      <span class="eyebrow">How It Works</span>
+      <h2 class="section-title" style="color:#fff;">From audit to handover — in 4 weeks.</h2>
+      <p style="font-size:15px;color:rgba(255,255,255,0.4);line-height:1.8;margin-bottom:2.5rem;max-width:500px;">Every AutoVibe project follows the same proven four-step process.</p>
+      <div class="process-steps">
+        <div class="p-step-dark"><p class="p-num">Step 01</p><div class="p-icon"></div><h3 class="p-title">Workflow Audit</h3><p class="p-desc">We map your current process, find every manual bottleneck, and identify what to automate first for maximum impact.</p></div>
+        <div class="p-step-dark"><p class="p-num">Step 02</p><div class="p-icon"></div><h3 class="p-title">System Design</h3><p class="p-desc">We design the automation blueprint — tools, triggers, sequences, and integrations — and walk you through it before building.</p></div>
+        <div class="p-step-dark"><p class="p-num">Step 03</p><div class="p-icon"></div><h3 class="p-title">Build &amp; Test</h3><p class="p-desc">We build the full system, connect all your tools, and test every flow end-to-end before anything goes live.</p></div>
+        <div class="p-step-dark"><p class="p-num">Step 04</p><div class="p-icon"></div><h3 class="p-title">Handover &amp; Support</h3><p class="p-desc">We hand over a fully working system with documentation and a training session — plus ongoing support if needed.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="av-pricing-section" style="padding:5rem 3rem;">
+    <div class="sec-inner">
+      <span class="eyebrow">Pricing</span>
+      <h2 class="section-title" style="color:#fff;">Quoted per scope. No surprises.</h2>
+      <div class="av-pricing-card">
+        <div class="av-price-left"><p class="big-from">Projects from</p><p class="big-price">KSh 70,000</p><p class="big-note">Every AutoVibe project is scoped and quoted individually. Request a quote and we'll give you an exact figure within 48 hours.</p><a class="btn-crimson" onclick="showPage('contact','get-in-touch')" style="cursor:pointer;">Request a free audit →</a></div>
+        <div class="pf-box"><p class="pf-title">What affects the price</p><ul class="pf-list"><li>Number of automations needed</li><li>Tools and platforms to integrate</li><li>Complexity of existing workflows</li><li>Custom copywriting required</li><li>Ongoing support &amp; maintenance</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="av-cta-section">
+    <h2 class="av-cta-title">Ready to stop doing it manually?</h2>
+    <p class="av-cta-sub">Tell us about your business and the tasks eating your team's time.<br/>We'll scope a custom system and give you an exact quote within 48 hours.</p>
+    <div style="display:flex;justify-content:center;gap:14px;flex-wrap:wrap;"><a class="btn-white" onclick="showPage('contact','get-in-touch')" style="cursor:pointer;">Request a quote →</a><a class="btn-ghost" style="border-color:rgba(255,255,255,0.3);color:rgba(255,255,255,0.8);">See automation types ↑</a></div>
+  </div>
+
+  <footer class="av-footer" style="background:#1E1612;padding:3rem;border-top:1px solid rgba(255,255,255,0.05);">
+    <div class="footer-inner">
+      <div><div>
+  <div style="font-family:'Playfair Display',serif;font-size:20px;font-weight:900;color:var(--deep);">Brand<span style="color:var(--crimson);">Vibe</span></div>
+  <div style="font-size:9px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-light);">Strategy · Systems · Growth</div>
+</div><p class="footer-tagline">Marketing that looks good and performs better </p></div>
+      <div class="footer-links"><a onclick="showPage('home')" style="cursor:pointer;">Home</a><a onclick="showPage('services')" style="cursor:pointer;">Services</a><a onclick="showPage('portfolio')" style="cursor:pointer;">Portfolio</a><a onclick="showPage('contact')" style="cursor:pointer;">Contact</a></div>
+      <div class="footer-socials"><a href="https://www.tiktok.com/@brandvibe.ke" target="_blank" class="social-icon" title="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.75a8.18 8.18 0 004.78 1.52V6.82a4.85 4.85 0 01-1.01-.13z"/></svg></a><a href="https://www.instagram.com/_brandvibe/" target="_blank" class="social-icon" title="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a><a href="https://www.linkedin.com/company/brandvibeltd/" target="_blank" class="social-icon" title="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></div>
+    </div>
+    <p class="footer-copy" style="border-top-color:rgba(255,255,255,0.06);color:rgba(255,255,255,0.2);">© 2026 Brand Vibe. All rights reserved.</p>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════
+     CONTACT PAGE
+══════════════════════════════════════ -->
+<div class="page" id="page-contact">
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <p class="breadcrumb">Home / <span>Contact</span></p>
+      <h1 class="page-title">Let's build something <em>great</em> together.</h1>
+      <p class="page-sub">Tell us your goals, your industry, and your budget — we'll put together a tailored plan and come back to you within 48 hours.</p>
+    </div>
+  </div>
+
+  <section style="background:var(--cream);">
+    <div class="sec-inner">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;">
+        <div>
+          <span class="eyebrow" id="get-in-touch" style="scroll-margin-top:100px;">Get in Touch</span>
+          <h2 class="section-title">Request a quote or<br/>free brand audit</h2>
+          <p class="section-sub">Fill in the form and we'll get back to you within 48 hours with a tailored recommendation.</p>
+          <div style="display:flex;flex-direction:column;gap:1rem;margin-bottom:2rem;">
+            <div style="display:flex;align-items:center;gap:12px;padding:1rem;background:var(--white);border-radius:12px;border:1px solid var(--cream-dark);">
+              <span style="font-size:22px;">📧</span><div><p style="font-size:13px;font-weight:600;color:var(--deep);">General enquiries</p><a href="mailto:info@brandvibe.co.ke" style="font-size:13px;color:var(--crimson);text-decoration:none;font-weight:500;">info@brandvibe.co.ke</a></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px;padding:1rem;background:var(--white);border-radius:12px;border:1px solid var(--cream-dark);">
+              <span style="font-size:22px;"></span><div><p style="font-size:13px;font-weight:600;color:var(--deep);">Marketing enquiries</p><a href="mailto:marketing@brandvibe.co.ke" style="font-size:13px;color:var(--crimson);text-decoration:none;font-weight:500;">marketing@brandvibe.co.ke</a></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px;padding:1rem;background:var(--white);border-radius:12px;border:1px solid var(--cream-dark);">
+              <span style="font-size:22px;"></span><div><p style="font-size:13px;font-weight:600;color:var(--deep);">Hiring &amp; careers</p><a href="mailto:hr@brandvibe.co.ke" style="font-size:13px;color:var(--crimson);text-decoration:none;font-weight:500;">hr@brandvibe.co.ke</a></div>
+            </div>
+
+            <div style="display:flex;align-items:center;gap:12px;padding:1rem;background:var(--white);border-radius:12px;border:1px solid var(--cream-dark);">
+              <span style="font-size:22px;">📍</span><div><p style="font-size:13px;font-weight:600;color:var(--deep);">Based in Nairobi, Kenya</p><p style="font-size:13px;color:var(--text-mid);">Serving clients across Africa and beyond</p></div>
+            </div>
+            <div style="display:flex;gap:10px;padding:1rem;background:var(--white);border-radius:12px;border:1px solid var(--cream-dark);align-items:center;">
+              <p style="font-size:13px;font-weight:600;color:var(--deep);margin-right:8px;">Follow us</p>
+              <a href="https://www.tiktok.com/@brandvibe.ke" target="_blank" class="social-icon" title="TikTok"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.75a8.18 8.18 0 004.78 1.52V6.82a4.85 4.85 0 01-1.01-.13z"/></svg></a>
+              <a href="https://www.instagram.com/_brandvibe/" target="_blank" class="social-icon" title="Instagram"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+              <a href="https://www.linkedin.com/company/brandvibeltd/" target="_blank" class="social-icon" title="LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            </div>
+          </div>
+        </div>
+        <div style="background:var(--white);border-radius:20px;padding:2.5rem;box-shadow:0 4px 32px rgba(192,57,43,0.08);border:1px solid var(--cream-dark);">
+          <h3 id="contact-form" style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--deep);margin-bottom:1.5rem;scroll-margin-top:120px;">Tell us about your project</h3>
+
+          <!-- SUCCESS MESSAGE (hidden by default) -->
+          <div id="form-success" style="display:none;background:#E8F7F1;border:1.5px solid #1D9E75;border-radius:10px;padding:16px 18px;margin-bottom:1.25rem;text-align:center;">
+            <p style="font-size:15px;font-weight:700;color:#0F6E56;margin-bottom:4px;">Message sent successfully!</p>
+            <p style="font-size:13px;color:#0F6E56;">We have received your enquiry and will get back to you within 48 hours. — The BrandVibe Team</p>
+          </div>
+
+          <!-- ERROR MESSAGE (hidden by default) -->
+          <div id="form-error" style="display:none;background:#FEF0EF;border:1.5px solid #C0392B;border-radius:10px;padding:16px 18px;margin-bottom:1.25rem;text-align:center;">
+            <p style="font-size:14px;font-weight:600;color:#C0392B;">Something went wrong. Please email us directly at <a href="mailto:info@brandvibe.co.ke" style="color:#C0392B;font-weight:700;">info@brandvibe.co.ke</a></p>
+          </div>
+
+          <!-- FORMSPREE FORM -->
+          <form id="brandvibe-contact-form" action="https://formspree.io/f/mqendjzy" method="POST" style="display:flex;flex-direction:column;gap:1rem;">
+
+            <!-- Hidden Formspree config fields -->
+            <input type="hidden" name="_subject" value="New Enquiry — BrandVibe Website">
+            <input type="hidden" name="_replyto" value="info@brandvibe.co.ke">
+            <input type="text" name="_gotcha" style="display:none;">
+
+            <div>
+              <label style="font-size:12px;font-weight:600;color:var(--text-mid);letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:6px;">Your Name <span style="color:#C0392B;">*</span></label>
+              <input type="text" name="name" placeholder="Jane Wambui" required style="width:100%;padding:12px 14px;border-radius:8px;border:1.5px solid var(--cream-dark);font-size:14px;font-family:'DM Sans',sans-serif;color:var(--deep);outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='#C0392B'" onblur="this.style.borderColor='#F5E0E0'">
+            </div>
+
+            <div>
+              <label style="font-size:12px;font-weight:600;color:var(--text-mid);letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:6px;">Business Name</label>
+              <input type="text" name="business" placeholder="Your Company Ltd" style="width:100%;padding:12px 14px;border-radius:8px;border:1.5px solid var(--cream-dark);font-size:14px;font-family:'DM Sans',sans-serif;color:var(--deep);outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='#C0392B'" onblur="this.style.borderColor='#F5E0E0'">
+            </div>
+
+            <div>
+              <label style="font-size:12px;font-weight:600;color:var(--text-mid);letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:6px;">Email Address <span style="color:#C0392B;">*</span></label>
+              <input type="email" name="email" placeholder="hello@yourcompany.com" required style="width:100%;padding:12px 14px;border-radius:8px;border:1.5px solid var(--cream-dark);font-size:14px;font-family:'DM Sans',sans-serif;color:var(--deep);outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='#C0392B'" onblur="this.style.borderColor='#F5E0E0'">
+            </div>
+
+            <div>
+              <label style="font-size:12px;font-weight:600;color:var(--text-mid);letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:6px;">Phone Number</label>
+              <input type="tel" name="phone" placeholder="+254 700 000 000" style="width:100%;padding:12px 14px;border-radius:8px;border:1.5px solid var(--cream-dark);font-size:14px;font-family:'DM Sans',sans-serif;color:var(--deep);outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='#C0392B'" onblur="this.style.borderColor='#F5E0E0'">
+            </div>
+
+            <div>
+              <label style="font-size:12px;font-weight:600;color:var(--text-mid);letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:6px;">Service Interested In <span style="color:#C0392B;">*</span></label>
+              <select name="service" required style="width:100%;padding:12px 14px;border-radius:8px;border:1.5px solid var(--cream-dark);font-size:14px;font-family:'DM Sans',sans-serif;color:var(--deep);outline:none;background:#fff;transition:border-color 0.2s;" onfocus="this.style.borderColor='#C0392B'" onblur="this.style.borderColor='#F5E0E0'">
+                <option value="" disabled selected>Select a service...</option>
+                <option>Social Media Marketing</option>
+                <option>Content Marketing</option>
+                <option>Digital Marketing (Meta)</option>
+                <option>Business Development</option>
+                <option>AutoVibe — Business Automation</option>
+                <option>Full Monthly Retainer</option>
+                <option>Events &amp; Activations</option>
+                <option>Free Brand Audit</option>
+              </select>
+            </div>
+
+            <div>
+              <label style="font-size:12px;font-weight:600;color:var(--text-mid);letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:6px;">Tell us about your goals <span style="color:#C0392B;">*</span></label>
+              <textarea name="message" placeholder="What are you trying to achieve? What is your biggest marketing challenge?" rows="4" required style="width:100%;padding:12px 14px;border-radius:8px;border:1.5px solid var(--cream-dark);font-size:14px;font-family:'DM Sans',sans-serif;color:var(--deep);outline:none;resize:vertical;transition:border-color 0.2s;" onfocus="this.style.borderColor='#C0392B'" onblur="this.style.borderColor='#F5E0E0'"></textarea>
+            </div>
+
+            <button type="submit" id="form-submit-btn" class="btn-primary" style="width:100%;padding:14px;font-size:15px;transition:all 0.2s;">Send Message →</button>
+
+            <p style="font-size:11px;color:var(--text-light);text-align:center;margin-top:4px;">We respond within 48 hours. Fields marked <span style="color:#C0392B;">*</span> are required.</p>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div><div>
+  <div style="font-family:'Playfair Display',serif;font-size:20px;font-weight:900;color:var(--deep);">Brand<span style="color:var(--crimson);">Vibe</span></div>
+  <div style="font-size:9px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-light);">Strategy · Systems · Growth</div>
+</div><p class="footer-tagline">Marketing that looks good and performs better </p></div>
+      <div class="footer-links"><a onclick="showPage('home')" style="cursor:pointer;">Home</a><a onclick="showPage('services')" style="cursor:pointer;">Services</a><a onclick="showPage('portfolio')" style="cursor:pointer;">Portfolio</a><a onclick="showPage('blog')" style="cursor:pointer;">Blog</a></div>
+      <div class="footer-socials"><a href="https://www.tiktok.com/@brandvibe.ke" target="_blank" class="social-icon" title="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.75a8.18 8.18 0 004.78 1.52V6.82a4.85 4.85 0 01-1.01-.13z"/></svg></a><a href="https://www.instagram.com/_brandvibe/" target="_blank" class="social-icon" title="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a><a href="https://www.linkedin.com/company/brandvibeltd/" target="_blank" class="social-icon" title="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></div>
+    </div>
+    <p class="footer-copy">© 2026 Brand Vibe. All rights reserved.</p>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════
+     JAVASCRIPT
+══════════════════════════════════════ -->

@@ -1,0 +1,101 @@
+import{j as e}from"./index-CHfyU9IW.js";import{P as s}from"./PageShell-CTUyEFvE.js";const a=`  <div class="page-hero">\r
+    <div class="page-hero-inner">\r
+      <p class="breadcrumb">Home / <span>Portfolio</span></p>\r
+      <h1 class="page-title">Our work <em>speaks</em><br/>for itself.</h1>\r
+      <p class="page-sub">Real case studies from brands we've transformed — strategies, challenges, and measurable results.</p>\r
+      <div class="filter-tabs"><span class="filter-tab active">All</span><span class="filter-tab">Healthcare</span><span class="filter-tab">Technology &amp; SaaS</span><span class="filter-tab">NGOs</span><span class="filter-tab">Automation</span></div>\r
+    </div>\r
+  </div>\r
+\r
+  <section style="background:var(--cream);">\r
+    <div class="sec-inner">\r
+      <span class="eyebrow">Marketing Case Studies</span>\r
+      <h2 class="section-title">Brands we've grown</h2>\r
+      <div class="cases-grid">\r
+        <div class="case-card dark-card"><p class="case-industry">Healthcare &amp; Wellness</p><span class="featured-badge">Featured</span><h3 class="case-name">OptiHaus Vision Center</h3><p class="case-label">Challenge</p><p class="case-text">OptiHaus struggled with low online visibility and unclear positioning in a competitive eyecare market. Their website was outdated and social media presence was minimal — resulting in lost patient acquisition opportunities.</p><p class="case-label">Solution</p><p class="case-text">We rebuilt their brand foundations end-to-end: new positioning, a fast modern website with patient-focused booking, monthly social and content calendar, and a local-SEO programme targeting Nairobi search terms.</p><p class="case-label">Outcome — within 6 months</p><div class="metrics-grid"><div class="metric"><p class="metric-num">45%</p><p class="metric-label">Increase in website traffic</p></div><div class="metric"><p class="metric-num">120%</p><p class="metric-label">More online bookings</p></div><div class="metric"><p class="metric-num">3×</p><p class="metric-label">Social media followers</p></div><div class="metric"><p class="metric-num">★ 4.8</p><p class="metric-label">Average patient review</p></div></div><div class="services-pills"><span class="s-pill">Brand Strategy</span><span class="s-pill">Website Design</span><span class="s-pill">SEO</span><span class="s-pill">Social Media</span></div><div class="case-quote"><p>"Before BrandVibe, we were relying entirely on word of mouth. Within a few months we had a brand we were proud of."</p><span>— Practice Manager, OptiHaus Vision Center</span></div></div>\r
+        <div class="case-card"><p class="case-industry">Technology &amp; SaaS</p><span class="featured-badge">Featured</span><h3 class="case-name">TechFlow Solutions</h3><p class="case-label">Challenge</p><p class="case-text">TechFlow had a solid product but a brand that blended into the background. Generic messaging and a weak LinkedIn presence made every enterprise deal harder to close.</p><p class="case-label">Solution</p><p class="case-text">We sharpened their positioning, rewrote core messaging for enterprise buyers, redesigned the marketing site, and ran a 12-month LinkedIn thought-leadership programme with the founders.</p><p class="case-label">Outcome — within 12 months</p><div class="metrics-grid"><div class="metric"><p class="metric-num">200%</p><p class="metric-label">Increase in qualified leads</p></div><div class="metric"><p class="metric-num">65%</p><p class="metric-label">Faster sales cycle</p></div><div class="metric"><p class="metric-num">8</p><p class="metric-label">Enterprise clients secured</p></div><div class="metric"><p class="metric-num">15K+</p><p class="metric-label">LinkedIn followers gained</p></div></div><div class="services-pills"><span class="s-pill">Brand Identity</span><span class="s-pill">Messaging</span><span class="s-pill">Website Redesign</span><span class="s-pill">LinkedIn Strategy</span></div><div class="case-quote"><p>"BrandVibe gave us the brand to match what we'd built. The enterprise clients started coming to us."</p><span>— CEO, TechFlow Solutions</span></div></div>\r
+      </div>\r
+    </div>\r
+  </section>\r
+\r
+  <section style="background:var(--blush);padding:5rem 3rem;">\r
+    <div class="sec-inner">\r
+      <span class="eyebrow on-blush" style="color:var(--deep);"><span style="display:inline-block;width:20px;height:2px;background:var(--crimson);border-radius:2px;flex-shrink:0;margin-right:0;"></span>AutoVibe Automation Case Studies</span>\r
+      <h2 class="section-title">Businesses we've automated</h2>\r
+      <p class="section-sub" style="max-width:520px;">Two very different businesses — two completely different automation challenges. Both solved by AutoVibe.</p>\r
+      <div class="auto-cases-grid">\r
+\r
+        <!-- Elimika Africa — blush card -->\r
+        <div class="case-card" style="background:var(--white);border:1.5px solid var(--cream-dark);border-top:4px solid #E85D0C;transition:all 0.25s;">\r
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;">\r
+            <div>\r
+              <p style="font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#E85D0C;margin-bottom:4px;">Education &amp; EdTech</p>\r
+              <span style="display:inline-block;background:#E85D0C;color:#fff;font-size:10px;font-weight:700;padding:3px 10px;border-radius:999px;letter-spacing:0.06em;text-transform:uppercase;">AutoVibe</span>\r
+            </div>\r
+            <div style="background:rgba(232,93,12,0.08);border-radius:10px;padding:8px 12px;text-align:center;">\r
+              <p style="font-size:10px;font-weight:600;color:#E85D0C;letter-spacing:0.06em;text-transform:uppercase;">90 days</p>\r
+            </div>\r
+          </div>\r
+          <h3 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:900;color:var(--deep);margin-bottom:1rem;">Elimika Africa</h3>\r
+          <p style="font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#E85D0C;margin-bottom:5px;">Challenge</p>\r
+          <p style="font-size:13px;color:var(--text-mid);line-height:1.7;margin-bottom:1rem;">Elimika Africa had a strong course catalogue but a fully manual enrollment process. Prospective students went cold — no system existed to follow up, nurture, or guide them to enrollment.</p>\r
+          <p style="font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#E85D0C;margin-bottom:5px;">Solution</p>\r
+          <p style="font-size:13px;color:var(--text-mid);line-height:1.7;margin-bottom:1.25rem;">AutoVibe built an end-to-end enrollment engine: web lead capture into a CRM, instant WhatsApp + email welcome, a 5-step nurture sequence, and automated enrollment reminders — all running 24/7.</p>\r
+          <p style="font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#E85D0C;margin-bottom:8px;">Outcome — 90 days</p>\r
+          <div class="metrics-grid" style="margin-bottom:1.25rem;">\r
+            <div class="metric" style="background:rgba(232,93,12,0.06);border:1px solid rgba(232,93,12,0.15);"><p class="metric-num" style="color:#E85D0C;">3×</p><p class="metric-label">Enrollment rate</p></div>\r
+            <div class="metric" style="background:rgba(232,93,12,0.06);border:1px solid rgba(232,93,12,0.15);"><p class="metric-num" style="color:#E85D0C;">60s</p><p class="metric-label">Lead response time</p></div>\r
+            <div class="metric" style="background:rgba(232,93,12,0.06);border:1px solid rgba(232,93,12,0.15);"><p class="metric-num" style="color:#E85D0C;">68%</p><p class="metric-label">Email open rate</p></div>\r
+            <div class="metric" style="background:rgba(232,93,12,0.06);border:1px solid rgba(232,93,12,0.15);"><p class="metric-num" style="color:#E85D0C;">0</p><p class="metric-label">Manual follow-ups</p></div>\r
+          </div>\r
+          <div style="display:flex;flex-wrap:wrap;gap:6px;">\r
+            <span style="font-size:11px;font-weight:500;padding:4px 10px;border-radius:999px;background:rgba(232,93,12,0.08);color:#E85D0C;border:1px solid rgba(232,93,12,0.2);">Lead Capture</span>\r
+            <span style="font-size:11px;font-weight:500;padding:4px 10px;border-radius:999px;background:rgba(232,93,12,0.08);color:#E85D0C;border:1px solid rgba(232,93,12,0.2);">Email Sequences</span>\r
+            <span style="font-size:11px;font-weight:500;padding:4px 10px;border-radius:999px;background:rgba(232,93,12,0.08);color:#E85D0C;border:1px solid rgba(232,93,12,0.2);">WhatsApp API</span>\r
+            <span style="font-size:11px;font-weight:500;padding:4px 10px;border-radius:999px;background:rgba(232,93,12,0.08);color:#E85D0C;border:1px solid rgba(232,93,12,0.2);">CRM Setup</span>\r
+          </div>\r
+        </div>\r
+\r
+        <!-- OptiHaus — blush card -->\r
+        <div class="case-card" style="background:var(--white);border:1.5px solid var(--cream-dark);border-top:4px solid var(--crimson);transition:all 0.25s;">\r
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;">\r
+            <div>\r
+              <p style="font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--crimson);margin-bottom:4px;">Healthcare</p>\r
+              <span style="display:inline-block;background:var(--crimson);color:#fff;font-size:10px;font-weight:700;padding:3px 10px;border-radius:999px;letter-spacing:0.06em;text-transform:uppercase;">AutoVibe</span>\r
+            </div>\r
+            <div style="background:rgba(192,57,43,0.07);border-radius:10px;padding:8px 12px;text-align:center;">\r
+              <p style="font-size:10px;font-weight:600;color:var(--crimson);letter-spacing:0.06em;text-transform:uppercase;">60 days</p>\r
+            </div>\r
+          </div>\r
+          <h3 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:900;color:var(--deep);margin-bottom:1rem;">OptiHaus Vision Center</h3>\r
+          <p style="font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--crimson);margin-bottom:5px;">Challenge</p>\r
+          <p style="font-size:13px;color:var(--text-mid);line-height:1.7;margin-bottom:1rem;">New staff were arriving on day one with no access, no schedule, and no role brief. HR was spending 2–3 days per hire just coordinating paperwork and introductions manually.</p>\r
+          <p style="font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--crimson);margin-bottom:5px;">Solution</p>\r
+          <p style="font-size:13px;color:var(--text-mid);line-height:1.7;margin-bottom:1.25rem;">AutoVibe built an HR onboarding flow: digital document collection, automated welcome sequences, calendar provisioning, and task routing to IT, Finance and team leads — triggered the moment an offer is accepted.</p>\r
+          <p style="font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--crimson);margin-bottom:8px;">Outcome — 60 days</p>\r
+          <div class="metrics-grid" style="margin-bottom:1.25rem;">\r
+            <div class="metric"><p class="metric-num">80%</p><p class="metric-label">HR admin time saved</p></div>\r
+            <div class="metric"><p class="metric-num">1 day</p><p class="metric-label">Onboarding (was 3)</p></div>\r
+            <div class="metric"><p class="metric-num">100%</p><p class="metric-label">Docs before day one</p></div>\r
+            <div class="metric"><p class="metric-num">0</p><p class="metric-label">Manual emails sent</p></div>\r
+          </div>\r
+          <div style="display:flex;flex-wrap:wrap;gap:6px;">\r
+            <span style="font-size:11px;font-weight:500;padding:4px 10px;border-radius:999px;background:rgba(192,57,43,0.07);color:var(--crimson);">HR Onboarding</span>\r
+            <span style="font-size:11px;font-weight:500;padding:4px 10px;border-radius:999px;background:rgba(192,57,43,0.07);color:var(--crimson);">Document Collection</span>\r
+            <span style="font-size:11px;font-weight:500;padding:4px 10px;border-radius:999px;background:rgba(192,57,43,0.07);color:var(--crimson);">Welcome Sequences</span>\r
+            <span style="font-size:11px;font-weight:500;padding:4px 10px;border-radius:999px;background:rgba(192,57,43,0.07);color:var(--crimson);">Task Routing</span>\r
+          </div>\r
+        </div>\r
+\r
+      </div>\r
+\r
+      <!-- CTA -->\r
+      <div class="portfolio-cta" style="margin-top:2.5rem;">\r
+        <h2>Ready to be our next case study?</h2>\r
+        <p>Tell us your goals — we'll build a strategy and show you exactly what results to expect.</p>\r
+        <a class="btn-white" href="/contact">Work with us →</a>\r
+      </div>\r
+    </div>\r
+  </section>\r
+\r
+`,t=()=>e.jsx(s,{html:a});export{t as component};
