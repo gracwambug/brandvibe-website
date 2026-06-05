@@ -1,5 +1,7 @@
 /* BrandVibe — Main JavaScript */
 
+function escapeHtml(s) { return String(s).replace(/[&<>"']/g, function(c) { return({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]; }); }
+
 // ── SCROLL NAV SHADOW ──
 window.addEventListener('scroll', function() {
   var nav = document.getElementById('mainNav');
@@ -39,9 +41,20 @@ function initFilterTabs() {
   document.querySelectorAll('.filter-tab').forEach(function(tab) {
     if (tab.dataset.bound === '1') return;
     tab.dataset.bound = '1';
-    tab.addEventListener('click', function() {
-      tab.closest('.filter-tabs').querySelectorAll('.filter-tab').forEach(function(t) { t.classList.remove('active'); });
+    if (!tab.getAttribute('tabindex')) tab.setAttribute('tabindex', '0');
+    if (!tab.getAttribute('role')) tab.setAttribute('role', 'button');
+    tab.setAttribute('aria-pressed', tab.classList.contains('active') ? 'true' : 'false');
+    function activate() {
+      tab.closest('.filter-tabs').querySelectorAll('.filter-tab').forEach(function(t) {
+        t.classList.remove('active');
+        t.setAttribute('aria-pressed', 'false');
+      });
       tab.classList.add('active');
+      tab.setAttribute('aria-pressed', 'true');
+    }
+    tab.addEventListener('click', activate);
+    tab.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activate(); }
     });
   });
 }
@@ -60,14 +73,20 @@ function trackEvent(name, props) {
 }
 
 function initAnalyticsTracking() {
-  document.querySelectorAll('a.btn-primary, a.btn-secondary, a.btn-outline, a.btn-white, a.nav-cta').forEach(function(a) {
+  document.querySelectorAll('a.btn-primary, a.btn-secondary, a.btn-outline, a.btn-white, a.nav-cta, a.btn-crimson, a.btn-ghost').forEach(function(a) {
     if (a.dataset.tracked === '1') return;
     a.dataset.tracked = '1';
     a.addEventListener('click', function() {
       var label = (a.textContent || '').trim();
       var href = a.getAttribute('href') || '';
-      trackEvent('CTA Click', { label: label.slice(0, 60), href: href });
       var l = label.toLowerCase();
+      trackEvent('cta_click', { label: label.slice(0, 60), href: href });
+      if (/quote|audit|free brand/.test(l) || (/\/contact/.test(href) && !/strategy|book|session/.test(l))) trackEvent('cta_request_quote', { label: label.slice(0,60), href: href });
+      if (/autovibe|automate|automation/.test(l) || /\/autovibe/.test(href)) trackEvent('cta_autovibe', { label: label.slice(0,60), href: href });
+      if (/work with us/.test(l)) trackEvent('cta_work_with_us', { label: label.slice(0,60) });
+      if (/book.*session|strategy.*session|strategy.*call/.test(l)) trackEvent('cta_book_session', { label: label.slice(0,60) });
+      if (/get started/.test(l)) trackEvent('cta_get_started', { label: label.slice(0,60) });
+      if (/^contact\b/.test(l) && !/quote|audit/.test(l)) trackEvent('cta_contact', { label: label.slice(0,60) });
       if (/strategy|consult|book|schedule/.test(l)) trackEvent('strategy_call_click', { label: label.slice(0,60), href: href });
       if (/package|pricing|plan|retainer/.test(l)) trackEvent('package_inquiry', { label: label.slice(0,60) });
       if (href.indexOf('/portfolio') === 0) trackEvent('portfolio_view', { href: href });
@@ -180,7 +199,7 @@ function sendChatMessage() {
   var msg = input.value.trim();
   if (!msg) return;
   var log = document.getElementById('chat-log');
-  log.innerHTML += '<div style="text-align:right;margin-bottom:10px;"><span style="background:#C0392B;color:#fff;padding:8px 12px;border-radius:12px 12px 2px 12px;font-size:13px;display:inline-block;max-width:80%;">' + msg + '</span></div>';
+  log.innerHTML += '<div style="text-align:right;margin-bottom:10px;"><span style="background:#C0392B;color:#fff;padding:8px 12px;border-radius:12px 12px 2px 12px;font-size:13px;display:inline-block;max-width:80%;">' + escapeHtml(msg) + '</span></div>';
   input.value = '';
   setTimeout(function() {
     var lower = msg.toLowerCase();
@@ -234,8 +253,10 @@ function initContactForm() {
       form.reset();
       form.style.display = 'none';
       if (ok) { ok.style.display = 'block'; ok.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
-      trackEvent('contact_form_submit');
-      trackEvent('contact_form_submission');
+      var svc = '';
+      try { svc = (form.querySelector('[name="service"]') || {}).value || ''; } catch(e) {}
+      trackEvent('contact_form_submitted', { service: svc });
+      trackEvent('lead_generated', { service: svc });
       // Re-bind Calendly button that appears inside the success message
       if (typeof initCalendly === 'function') initCalendly();
     }).catch(function() {
@@ -250,6 +271,31 @@ function initContactForm() {
   }
 }
 
+// ── CONTACT FUNNEL ──
+function initContactFunnel() {
+  var form = document.getElementById('brandvibe-contact-form');
+  if (!form) return;
+  if (!form.dataset.funnelViewed) {
+    var obs = new IntersectionObserver(function(entries) {
+      if (entries[0].isIntersecting) {
+        form.dataset.funnelViewed = '1';
+        trackEvent('contact_form_viewed');
+        obs.disconnect();
+      }
+    }, { threshold: 0.2 });
+    obs.observe(form);
+  }
+  if (!form.dataset.funnelStarted) {
+    form.querySelectorAll('input, textarea, select').forEach(function(inp) {
+      inp.addEventListener('input', function() {
+        if (!form.dataset.funnelStarted) {
+          form.dataset.funnelStarted = '1';
+          trackEvent('contact_form_started');
+        }
+      }, { once: true });
+    });
+  }
+}
 
 // ── SCROLL DEPTH ──
 function initScrollDepth() {
@@ -286,6 +332,7 @@ function brandvibeInit() {
   initFilterTabs();
   initAnalyticsTracking();
   initContactForm();
+  initContactFunnel();
   initCalendly();
   initScrollDepth();
   initOutboundTracking();

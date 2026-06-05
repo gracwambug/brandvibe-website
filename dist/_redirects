@@ -1,5 +1,21 @@
-# Preserve SEO files before the SPA catch-all
-/sitemap.xml /sitemap.xml 200
-/robots.txt /robots.txt 200
+# BrandVibe — Netlify redirect rules
+# Netlify serves static files first; these rules are explicit pass-through
+# fallbacks that prevent the SPA catch-all from swallowing static assets.
 
-/* /index.html 200
+# ── Images / icons ───────────────────────────────────────────────────────────
+/og-image.png           /og-image.png           200
+/og-image.svg           /og-image.svg           200
+/favicon.ico            /favicon.ico            200
+/apple-touch-icon.png   /apple-touch-icon.png   200
+/favicon-192.png        /favicon-192.png        200
+
+# ── Public scripts / styles ───────────────────────────────────────────────────
+/brandvibe.css          /brandvibe.css          200
+/brandvibe.js           /brandvibe.js           200
+
+# ── SEO files ────────────────────────────────────────────────────────────────
+/sitemap.xml            /sitemap.xml            200
+/robots.txt             /robots.txt             200
+
+# ── SPA catch-all — serve React app for all other paths ─────────────────────
+/*                      /index.html             200

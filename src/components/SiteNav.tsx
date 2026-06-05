@@ -1,12 +1,12 @@
 import { NavLink, useLocation } from "react-router-dom";
 
 const links = [
-  { to: "/", label: "Home" },
-  { to: "/about", label: "About" },
-  { to: "/services", label: "Services" },
-  { to: "/portfolio", label: "Portfolio" },
-  { to: "/blog", label: "Blog" },
-  { to: "/autovibe", label: "AutoVibe" },
+  { to: "/", label: "Home", end: true },
+  { to: "/about", label: "About", end: false },
+  { to: "/services", label: "Services", end: false },
+  { to: "/portfolio", label: "Portfolio", end: false },
+  { to: "/blog", label: "Blog", end: false },
+  { to: "/autovibe", label: "AutoVibe", end: false },
 ] as const;
 
 export function SiteNav() {
@@ -63,9 +63,8 @@ export function SiteNav() {
           <li key={l.to}>
             <NavLink
               to={l.to}
-              className={({ isActive }) =>
-                isActive || (l.to === "/" && location.pathname === "/") ? "active" : undefined
-              }
+              end={l.end}
+              className={({ isActive }) => (isActive ? "active" : undefined)}
               style={isAutoVibe ? { color: "rgba(255,255,255,0.6)" } : undefined}
             >
               {l.label}

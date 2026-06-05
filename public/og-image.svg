@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#1A0E08"/>
+  <circle cx="1060" cy="315" r="290" fill="rgba(192,57,43,0.15)"/>
+  <circle cx="1180" cy="80" r="150" fill="rgba(192,57,43,0.1)"/>
+  <circle cx="160" cy="580" r="130" fill="rgba(192,57,43,0.07)"/>
+  <text x="80" y="215" font-family="Georgia,serif" font-size="100" font-weight="900" fill="#FFFFFF" letter-spacing="-2">Brand<tspan fill="#C0392B">Vibe</tspan></text>
+  <text x="84" y="272" font-family="Arial,sans-serif" font-size="20" font-weight="600" fill="rgba(255,255,255,0.5)" letter-spacing="6">STRATEGY · SYSTEMS · GROWTH</text>
+  <line x1="80" y1="308" x2="460" y2="308" stroke="#C0392B" stroke-width="2"/>
+  <text x="80" y="375" font-family="Arial,sans-serif" font-size="36" fill="rgba(255,255,255,0.85)">Full-Service Branding &amp;</text>
+  <text x="80" y="425" font-family="Arial,sans-serif" font-size="36" fill="rgba(255,255,255,0.85)">Marketing Agency</text>
+  <text x="80" y="498" font-family="Arial,sans-serif" font-size="24" fill="rgba(255,255,255,0.4)">Nairobi, Kenya · brandvibe.co.ke</text>
+</svg>

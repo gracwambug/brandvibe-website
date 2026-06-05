@@ -3,34 +3,126 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>BrandVibe Portfolio | Creative Work & Case Studies</title>
+    <meta name="theme-color" content="#C0392B" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- Primary meta — replaced per-page by prerender script -->
+    <title>BrandVibe Portfolio | Client Growth Stories</title>
     <link rel="canonical" href="https://brandvibe.co.ke/portfolio" />
-    <meta name="description" content="See BrandVibe branding, marketing and campaign work across industries — creative strategy built to convert and scale." />
+    <meta name="description" content="Branding, marketing and automation case studies from BrandVibe — challenge, solution and outcome across healthcare, SaaS, EdTech, NGOs and more in Kenya." />
+    <meta name="keywords" content="BrandVibe portfolio, marketing case studies Kenya, branding work Nairobi" />
+
+    <!-- Open Graph — replaced per-page by prerender script -->
+    <meta property="og:site_name" content="BrandVibe" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://brandvibe.co.ke/portfolio" />
+    <meta property="og:title" content="BrandVibe Portfolio & Case Studies" />
+    <meta property="og:description" content="Selected client case studies — challenge, solution, outcome." />
+    <meta property="og:image" content="https://brandvibe.co.ke/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter / X Card — replaced per-page by prerender script -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@brandvibe_ke" />
+    <meta name="twitter:title" content="BrandVibe Portfolio | Client Growth Stories" />
+    <meta name="twitter:description" content="Branding, marketing & automation case studies across 6 industries." />
+    <meta name="twitter:image" content="https://brandvibe.co.ke/og-image.png" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap"
     />
+    <link rel="preload" as="style" href="/brandvibe.css" />
+    <link rel="dns-prefetch" href="https://formspree.io" />
     <link rel="stylesheet" href="/brandvibe.css" />
+
+    <!-- Global JSON-LD: Organisation + LocalBusiness + WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://brandvibe.co.ke/#organization",
+          "name": "BrandVibe",
+          "url": "https://brandvibe.co.ke/",
+          "logo": "https://brandvibe.co.ke/favicon.ico",
+          "description": "BrandVibe is a full-service branding, marketing and business automation agency based in Nairobi, Kenya, helping organisations across East Africa grow with clarity, consistency and measurable results.",
+          "email": "info@brandvibe.co.ke",
+          "areaServed": ["Kenya", "East Africa", "Africa"],
+          "sameAs": [
+            "https://www.linkedin.com/company/brandvibeltd/",
+            "https://www.instagram.com/_brandvibe/",
+            "https://www.tiktok.com/@brandvibe.ke"
+          ]
+        },
+        {
+          "@type": ["LocalBusiness", "ProfessionalService"],
+          "@id": "https://brandvibe.co.ke/#localbusiness",
+          "name": "BrandVibe",
+          "url": "https://brandvibe.co.ke/",
+          "priceRange": "KSh 30,000+",
+          "telephone": "+254-700-000-000",
+          "email": "info@brandvibe.co.ke",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Nairobi",
+            "addressRegion": "Nairobi",
+            "addressCountry": "KE"
+          },
+          "areaServed": ["Nairobi", "Kenya", "East Africa"],
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+              "opens": "08:00",
+              "closes": "17:00"
+            }
+          ],
+          "sameAs": [
+            "https://www.linkedin.com/company/brandvibeltd/",
+            "https://www.instagram.com/_brandvibe/",
+            "https://www.tiktok.com/@brandvibe.ke"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://brandvibe.co.ke/#website",
+          "url": "https://brandvibe.co.ke/",
+          "name": "BrandVibe",
+          "publisher": { "@id": "https://brandvibe.co.ke/#organization" },
+          "inLanguage": "en"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Plausible Analytics -->
     <script defer data-domain="brandvibe.co.ke" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>
       window.plausible = window.plausible || function () {
         (window.plausible.q = window.plausible.q || []).push(arguments);
       };
     </script>
+
+    <!-- Google Analytics 4 — send_page_view:false because PageShell fires config() on route changes -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS9F2F7GM9"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
+      function gtag() { dataLayer.push(arguments); }
       window.gtag = gtag;
       gtag("js", new Date());
-      gtag("config", "G-WS9F2F7GM9", { send_page_view: true });
+      gtag("config", "G-WS9F2F7GM9", { send_page_view: false });
     </script>
-    <script type="module" crossorigin src="/assets/index-DzuKUATp.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BNNJB5G0.css">
+    <script type="module" crossorigin src="/assets/index-CliZNFE_.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BKp-owJk.css">
+      <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://brandvibe.co.ke/"},{"@type":"ListItem","position":2,"name":"Portfolio","item":"https://brandvibe.co.ke/portfolio"}]}</script>
   </head>
   <body>
     <div id="root">  <div class="page-hero">
@@ -133,6 +225,6 @@
     </div>
   </section>
 
-</div>
+</div>
   </body>
 </html>
